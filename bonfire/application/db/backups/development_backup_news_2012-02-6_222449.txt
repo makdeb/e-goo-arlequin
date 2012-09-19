@@ -1,0 +1,21 @@
+#
+# TABLE STRUCTURE FOR: bf_news
+#
+
+CREATE TABLE `bf_news` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `news_category` text NOT NULL,
+  `news_title` text NOT NULL,
+  `news_img_path` varchar(20) DEFAULT NULL,
+  `news_text` longtext NOT NULL,
+  `news_author` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8;
+
+INSERT INTO bf_news (`id`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (40, 'box', 'Мексиканские страсти', 'box1.jpg', 'Карлос Кондит стал временным чемпионом UFC в полусреднем весе, сломив сопротивление Ника Диаса, а Фабрисью Вердум вернулся в организацию с уверенной победой над Роем Нельсоном. ', '');
+INSERT INTO bf_news (`id`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (41, 'hockey', '«Ак Барс» – СКА – 5:6. Как это было', 'match2.jpg', 'Хоккеисты «Ак Барса» и СКА подарили зрителям настоящий спектакль с 10 шайбами в основное время и серией буллитов.<br> Кроме того, в матче успели поиграть все заявленные голкиперы, включая Максима Соколова, для которого это был первый матч в сезоне. Ветеран, к слову, показал свой высочайший класс. Все детали сверхинтересного матча – в текстовой трансляции Sports.ru.', '');
+INSERT INTO bf_news (`id`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (42, 'other', '\"Подвижные заслоны дело рук и ног Юинга\"', 'nigers1.jpg', 'Об общении с Хэйвордом и Хиллом, поддержании формы во время предыдущего локаута, \"подвижных\" заслонах, удивлениях и разочарованиях сезона и многом другом в окончании интервью Реджи Миллера. ', '');
+INSERT INTO bf_news (`id`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (43, 'other', 'Домашняя победа', 'ski.jpg', 'Победа в скиатлоне <b>Максима Вылегжанина</b>, минимальное лидерство Юстины Ковальчик в общем зачёте и возвращение Евгения Дементьева в обзоре Кубка мира по лыжным гонкам в Рыбинске. ', '');
+INSERT INTO bf_news (`id`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (44, 'football', 'Фабио против ФА', 'fabio.jpg', 'Что думает Капелло о лишении Терри капитанского звания, Виллаш-Боаш о работе Уэбба, а вице-президент \"Барсы\" о возможной покупке ван Перси? Ответы на эти вопросы в обзоре прессы. ', '');
+
+

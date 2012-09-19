@@ -1,0 +1,16 @@
+#
+# TABLE STRUCTURE FOR: bf_news_blog
+#
+
+CREATE TABLE `bf_news_blog` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `news_blog_text` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+INSERT INTO bf_news_blog (`id`, `news_blog_text`) VALUES (1, 'Будем записывать');
+INSERT INTO bf_news_blog (`id`, `news_blog_text`) VALUES (2, 'Еще запись');
+INSERT INTO bf_news_blog (`id`, `news_blog_text`) VALUES (3, 'Продолжаем...');
+INSERT INTO bf_news_blog (`id`, `news_blog_text`) VALUES (4, 'мб пока последняя');
+
+

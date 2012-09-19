@@ -1,0 +1,15 @@
+#
+# TABLE STRUCTURE FOR: bf_prices
+#
+
+CREATE TABLE `bf_prices` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `prices_name` varchar(45) NOT NULL,
+  `prices_key_type` varchar(4) NOT NULL,
+  `prices_key_valid_period` int(20) NOT NULL DEFAULT '0',
+  `prices_uah` decimal(6,2) NOT NULL,
+  `prices_rur` decimal(6,2) NOT NULL,
+  `prices_usd` decimal(6,2) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+

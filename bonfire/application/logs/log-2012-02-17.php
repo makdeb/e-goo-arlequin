@@ -1,0 +1,47 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2012-02-17 08:15:18 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 08:55:41 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 08:56:38 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 08:57:30 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 08:57:30 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:00:16 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:00:16 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:02:35 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:02:35 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:02:47 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:02:47 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:02:53 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:03:52 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:03:52 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:04:20 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:04:20 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:05:32 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:05:32 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:06:29 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:06:30 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:07:58 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:07:58 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:09:31 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:09:31 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:09:41 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:09:41 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:10:21 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:10:22 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:10:34 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:10:34 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:10:45 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:10:45 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:15:32 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:15:33 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:15:38 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:15:39 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:19:09 --> 404 Page Not Found --> news/categories
+ERROR - 2012-02-17 09:22:24 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:22:24 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:22:31 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 09:22:32 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 10:04:46 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 10:04:46 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 10:04:58 --> 404 Page Not Found --> 
+ERROR - 2012-02-17 10:04:58 --> 404 Page Not Found --> 

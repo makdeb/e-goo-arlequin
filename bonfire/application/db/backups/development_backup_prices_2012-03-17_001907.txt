@@ -1,0 +1,22 @@
+#
+# TABLE STRUCTURE FOR: bf_prices
+#
+
+CREATE TABLE `bf_prices` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `prices_name` varchar(45) NOT NULL,
+  `prices_key_type` varchar(4) NOT NULL,
+  `prices_key_valid_period` int(20) NOT NULL DEFAULT '0',
+  `prices_uah` decimal(6,2) NOT NULL,
+  `prices_rur` decimal(6,2) NOT NULL,
+  `prices_usd` decimal(6,2) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+INSERT INTO bf_prices (`id`, `prices_name`, `prices_key_type`, `prices_key_valid_period`, `prices_uah`, `prices_rur`, `prices_usd`) VALUES (1, 'матч', 'vips', 0, '25.00', '90.00', '3.00');
+INSERT INTO bf_prices (`id`, `prices_name`, `prices_key_type`, `prices_key_valid_period`, `prices_uah`, `prices_rur`, `prices_usd`) VALUES (2, '1 день', 'vipp', 1, '65.00', '250.00', '8.00');
+INSERT INTO bf_prices (`id`, `prices_name`, `prices_key_type`, `prices_key_valid_period`, `prices_uah`, `prices_rur`, `prices_usd`) VALUES (3, '7 дней', 'vipp', 7, '225.00', '800.00', '30.00');
+INSERT INTO bf_prices (`id`, `prices_name`, `prices_key_type`, `prices_key_valid_period`, `prices_uah`, `prices_rur`, `prices_usd`) VALUES (4, '15 дней', 'vipp', 15, '390.00', '1500.00', '50.00');
+INSERT INTO bf_prices (`id`, `prices_name`, `prices_key_type`, `prices_key_valid_period`, `prices_uah`, `prices_rur`, `prices_usd`) VALUES (5, '30 дней', 'vipp', 30, '690.00', '2500.00', '85.00');
+
+

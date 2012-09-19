@@ -1,0 +1,20 @@
+#
+# TABLE STRUCTURE FOR: bf_news
+#
+
+CREATE TABLE `bf_news` (
+  `id` int(20) NOT NULL AUTO_INCREMENT,
+  `news_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `news_category` varchar(45) NOT NULL,
+  `news_title` varchar(100) NOT NULL,
+  `news_img_path` varchar(20) DEFAULT NULL,
+  `news_short` text NOT NULL,
+  `news_text` longtext NOT NULL,
+  `news_author` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=87 DEFAULT CHARSET=utf8;
+
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_short`, `news_text`, `news_author`) VALUES (40, '2012-02-16 10:57:07', 'box', 'Мексиканские страсти', 'box1.jpg', '', 'Карлос Кондит стал временным чемпионом UFC в полусреднем весе, сломив сопротивление Ника Диаса, а Фабрисью Вердум вернулся в организацию с уверенной победой над Роем Нильсоном.', '');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_short`, `news_text`, `news_author`) VALUES (41, '2012-02-13 11:45:16', 'hockey', '«Ак Барс» – СКА – 5:6. Как это было', 'match2.jpg', '', 'Хоккеисты «Ак Барса» и СКА подарили зрителям настоящий спектакль с 10 шайбами в основное время и серией буллитов.<br> Кроме того, в матче успели поиграть все заявленные голкиперы, включая Максима Соколова, для которого это был первый матч в сезоне. Ветеран, к слову, показал свой высочайший класс. Все детали сверхинтересного матча – в текстовой трансляции Sports.ru.', 'betteam.ru');
+
+

@@ -1,0 +1,27 @@
+#
+# TABLE STRUCTURE FOR: bf_image
+#
+
+CREATE TABLE `bf_image` (
+  `id` smallint(6) NOT NULL,
+  `img_path` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+#
+# TABLE STRUCTURE FOR: bf_news
+#
+
+CREATE TABLE `bf_news` (
+  `id` int(20) NOT NULL AUTO_INCREMENT,
+  `news_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `news_category` varchar(45) NOT NULL,
+  `news_title` varchar(100) NOT NULL,
+  `news_img_path` varchar(20) DEFAULT NULL,
+  `news_short` text NOT NULL,
+  `news_text` longtext NOT NULL,
+  `news_author` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8;
+

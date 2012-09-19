@@ -1,0 +1,19 @@
+#
+# TABLE STRUCTURE FOR: bf_prices
+#
+
+CREATE TABLE `bf_prices` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `prices_name` varchar(45) NOT NULL,
+  `prices_uah` decimal(6,2) NOT NULL,
+  `prices_rur` decimal(6,2) NOT NULL,
+  `prices_usd` decimal(6,2) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+
+INSERT INTO bf_prices (`id`, `prices_name`, `prices_uah`, `prices_rur`, `prices_usd`) VALUES (3, '1', '65.00', '250.00', '8.00');
+INSERT INTO bf_prices (`id`, `prices_name`, `prices_uah`, `prices_rur`, `prices_usd`) VALUES (4, '7', '225.00', '800.00', '30.00');
+INSERT INTO bf_prices (`id`, `prices_name`, `prices_uah`, `prices_rur`, `prices_usd`) VALUES (5, '15', '390.00', '1500.00', '50.00');
+INSERT INTO bf_prices (`id`, `prices_name`, `prices_uah`, `prices_rur`, `prices_usd`) VALUES (7, '30', '690.00', '2500.00', '85.00');
+
+

@@ -1,0 +1,690 @@
+#
+# TABLE STRUCTURE FOR: bf_activities
+#
+
+CREATE TABLE `bf_activities` (
+  `activity_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `user_id` bigint(20) NOT NULL DEFAULT '0',
+  `activity` varchar(255) NOT NULL,
+  `module` varchar(255) NOT NULL,
+  `created_on` datetime NOT NULL,
+  `deleted` tinyint(12) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`activity_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=195 DEFAULT CHARSET=utf8;
+
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (1, 1, 'logged in from: 127.0.0.1', 'users', '2012-01-30 18:26:44', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (2, 1, 'App settings saved from: 127.0.0.1', 'core', '2012-01-30 18:26:53', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (3, 1, 'Created record with ID: 1 : 127.0.0.1', 'news', '2012-01-30 18:34:35', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (4, 1, 'Created record with ID: 2 : 127.0.0.1', 'news', '2012-01-30 18:35:22', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (5, 1, 'Created record with ID: 3 : 127.0.0.1', 'news', '2012-01-30 18:37:24', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (6, 1, 'Created record with ID: 4 : 127.0.0.1', 'news', '2012-01-30 18:37:54', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (7, 1, 'Created record with ID: 5 : 127.0.0.1', 'news', '2012-01-30 18:38:18', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (8, 1, 'Created record with ID: 6 : 127.0.0.1', 'news', '2012-01-30 18:39:08', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (9, 1, 'Created record with ID: 7 : 127.0.0.1', 'news', '2012-01-30 18:39:27', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (10, 1, 'Created record with ID: 8 : 127.0.0.1', 'news', '2012-01-30 18:40:00', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (11, 1, 'Created record with ID: 9 : 127.0.0.1', 'news', '2012-01-30 18:40:38', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (12, 1, 'logged in from: 127.0.0.1', 'users', '2012-01-30 18:59:23', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (13, 1, 'Created record with ID: 10 : 127.0.0.1', 'news', '2012-01-30 20:57:33', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (14, 1, 'Created record with ID: 11 : 127.0.0.1', 'news', '2012-01-30 21:05:42', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (15, 1, 'Deleted record with ID: 11 : 127.0.0.1', 'news', '2012-01-30 21:05:52', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (16, 1, 'Created record with ID: 12 : 127.0.0.1', 'news', '2012-01-30 21:10:36', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (17, 1, 'Created Module: Big_boom : 127.0.0.1', 'modulebuilder', '2012-01-30 21:28:52', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (18, 1, 'Migrate Type: big_boom_ Uninstalled Version: 0 from: 127.0.0.1', 'migrations', '2012-01-30 21:32:42', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (19, 1, 'Migrate Type: big_boom_ to Version: 1 from: 127.0.0.1', 'migrations', '2012-01-30 21:34:05', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (20, 1, 'Deleted Module: Big_boom : 127.0.0.1', 'modulebuilder', '2012-01-30 21:38:35', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (21, 1, 'Deleted Module: Big_boom : 127.0.0.1', 'modulebuilder', '2012-01-30 21:38:43', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (22, 1, 'logged in from: 127.0.0.1', 'users', '2012-01-31 17:27:51', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (23, 1, 'Updated record with ID: 4 : 127.0.0.1', 'news', '2012-01-31 20:07:19', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (24, 1, 'Updated record with ID: 4 : 127.0.0.1', 'news', '2012-01-31 20:18:32', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (25, 1, 'Created record with ID: 10 : 127.0.0.1', 'news', '2012-01-31 20:52:29', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (26, 1, 'Deleted record with ID: 10 : 127.0.0.1', 'news', '2012-01-31 20:52:39', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (27, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-01 09:36:25', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (28, 1, 'Created record with ID: 10 : 127.0.0.1', 'news', '2012-02-01 10:26:47', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (29, 1, 'Created record with ID: 11 : 127.0.0.1', 'news', '2012-02-01 10:26:48', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (30, 1, 'Created record with ID: 12 : 127.0.0.1', 'news', '2012-02-01 10:26:49', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (31, 1, 'Created record with ID: 13 : 127.0.0.1', 'news', '2012-02-01 10:46:11', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (32, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-01 21:34:09', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (33, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-01 23:01:13', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (34, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-02 09:36:01', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (35, 1, 'Created record with ID: 10 : 127.0.0.1', 'news', '2012-02-02 09:37:23', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (36, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-02 10:02:51', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (37, 1, 'Created record with ID: 11 : 127.0.0.1', 'news', '2012-02-02 10:32:56', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (38, 1, 'Created record with ID: 12 : 127.0.0.1', 'news', '2012-02-02 11:12:33', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (39, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-02 17:37:06', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (40, 1, 'Created record with ID: 10 : 127.0.0.1', 'news', '2012-02-02 19:38:08', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (41, 1, 'Created record with ID: 11 : 127.0.0.1', 'news', '2012-02-02 19:53:15', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (42, 1, 'Created record with ID: 12 : 127.0.0.1', 'news', '2012-02-02 19:53:50', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (43, 1, 'Created record with ID: 13 : 127.0.0.1', 'news', '2012-02-02 19:54:16', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (44, 1, 'Created record with ID: 14 : 127.0.0.1', 'news', '2012-02-02 19:56:58', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (45, 1, 'Created record with ID: 15 : 127.0.0.1', 'news', '2012-02-02 19:58:05', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (46, 1, 'Created record with ID: 16 : 127.0.0.1', 'news', '2012-02-02 19:59:31', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (47, 1, 'Created record with ID: 17 : 127.0.0.1', 'news', '2012-02-02 20:00:30', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (48, 1, 'Created record with ID: 18 : 127.0.0.1', 'news', '2012-02-02 20:01:39', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (49, 1, 'Created record with ID: 19 : 127.0.0.1', 'news', '2012-02-02 20:04:44', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (50, 1, 'Created record with ID: 20 : 127.0.0.1', 'news', '2012-02-02 20:12:20', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (51, 1, 'Created record with ID: 21 : 127.0.0.1', 'news', '2012-02-02 20:15:23', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (52, 1, 'Created record with ID: 22 : 127.0.0.1', 'news', '2012-02-02 20:17:46', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (53, 1, 'Created record with ID: 23 : 127.0.0.1', 'news', '2012-02-02 20:31:50', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (54, 1, 'Created record with ID: 24 : 127.0.0.1', 'news', '2012-02-02 20:33:31', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (55, 1, 'Created record with ID: 25 : 127.0.0.1', 'news', '2012-02-02 20:34:12', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (56, 1, 'Created record with ID: 26 : 127.0.0.1', 'news', '2012-02-02 20:34:56', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (57, 1, 'Created record with ID: 27 : 127.0.0.1', 'news', '2012-02-02 20:40:29', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (58, 1, 'Created record with ID: 28 : 127.0.0.1', 'news', '2012-02-02 20:46:57', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (59, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-02 21:09:56', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (60, 1, 'Created record with ID: 29 : 127.0.0.1', 'news', '2012-02-02 21:10:05', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (61, 1, 'Created record with ID: 30 : 127.0.0.1', 'news', '2012-02-02 21:11:12', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (62, 1, 'Created record with ID: 31 : 127.0.0.1', 'news', '2012-02-02 21:55:23', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (63, 1, 'Created record with ID: 32 : 127.0.0.1', 'news', '2012-02-02 21:56:32', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (64, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-03 09:49:07', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (65, 1, 'Created record with ID: 33 : 127.0.0.1', 'news', '2012-02-03 09:49:52', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (66, 1, 'Created record with ID: 34 : 127.0.0.1', 'news', '2012-02-03 09:51:16', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (67, 1, 'Created record with ID: 35 : 127.0.0.1', 'news', '2012-02-03 10:26:32', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (68, 1, 'Created record with ID: 36 : 127.0.0.1', 'news', '2012-02-03 10:27:34', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (69, 1, 'Created record with ID: 37 : 127.0.0.1', 'news', '2012-02-03 10:28:20', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (70, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-03 21:17:50', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (71, 1, 'Created record with ID: 38 : 127.0.0.1', 'news', '2012-02-03 21:18:47', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (72, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-04 20:42:38', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (73, 1, 'Created record with ID: 39 : 127.0.0.1', 'news', '2012-02-04 20:43:24', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (74, 1, 'Deleted record with ID: 1 : 127.0.0.1', 'news', '2012-02-04 20:44:43', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (75, 1, 'Deleted record with ID: 2 : 127.0.0.1', 'news', '2012-02-04 20:44:47', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (76, 1, 'Deleted record with ID: 3 : 127.0.0.1', 'news', '2012-02-04 20:44:49', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (77, 1, 'Deleted record with ID: 4 : 127.0.0.1', 'news', '2012-02-04 20:44:52', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (78, 1, 'Deleted record with ID: 5 : 127.0.0.1', 'news', '2012-02-04 20:44:54', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (79, 1, 'Deleted record with ID: 6 : 127.0.0.1', 'news', '2012-02-04 20:44:57', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (80, 1, 'Deleted record with ID: 7 : 127.0.0.1', 'news', '2012-02-04 20:44:59', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (81, 1, 'Deleted record with ID: 8 : 127.0.0.1', 'news', '2012-02-04 20:45:02', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (82, 1, 'Deleted record with ID: 9 : 127.0.0.1', 'news', '2012-02-04 20:45:04', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (83, 1, 'Deleted record with ID: 31 : 127.0.0.1', 'news', '2012-02-04 20:45:07', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (84, 1, 'Deleted record with ID: 32 : 127.0.0.1', 'news', '2012-02-04 20:45:09', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (85, 1, 'Deleted record with ID: 33 : 127.0.0.1', 'news', '2012-02-04 20:45:12', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (86, 1, 'Deleted record with ID: 34 : 127.0.0.1', 'news', '2012-02-04 20:45:14', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (87, 1, 'Deleted record with ID: 35 : 127.0.0.1', 'news', '2012-02-04 20:45:16', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (88, 1, 'Deleted record with ID: 36 : 127.0.0.1', 'news', '2012-02-04 20:45:19', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (89, 1, 'Deleted record with ID: 37 : 127.0.0.1', 'news', '2012-02-04 20:45:21', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (90, 1, 'Deleted record with ID: 38 : 127.0.0.1', 'news', '2012-02-04 20:45:24', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (91, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-05 14:28:13', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (92, 1, 'Created record with ID: 40 : 127.0.0.1', 'news', '2012-02-05 14:29:54', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (93, 1, 'Updated record with ID: 39 : 127.0.0.1', 'news', '2012-02-05 14:30:23', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (94, 1, 'Created record with ID: 41 : 127.0.0.1', 'news', '2012-02-05 14:32:00', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (95, 1, 'Deleted record with ID: 39 : 127.0.0.1', 'news', '2012-02-05 14:32:26', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (96, 1, 'Created record with ID: 42 : 127.0.0.1', 'news', '2012-02-05 14:33:24', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (97, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-06 10:12:26', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (98, 1, 'Created record with ID: 43 : 127.0.0.1', 'news', '2012-02-06 10:24:31', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (99, 1, 'Created record with ID: 44 : 127.0.0.1', 'news', '2012-02-06 10:26:25', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (100, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-06 22:24:16', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (101, 1, 'Created record with ID: 45 : 127.0.0.1', 'news', '2012-02-06 22:56:26', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (102, 1, 'Created record with ID: 47 : 127.0.0.1', 'news', '2012-02-06 23:33:45', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (103, 1, 'Created record with ID: 51 : 127.0.0.1', 'news', '2012-02-06 23:39:27', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (104, 1, 'Created record with ID: 52 : 127.0.0.1', 'news', '2012-02-06 23:53:53', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (105, 1, 'Created record with ID: 53 : 127.0.0.1', 'news', '2012-02-06 23:54:31', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (106, 1, 'Created record with ID: 54 : 127.0.0.1', 'news', '2012-02-07 00:06:15', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (107, 1, 'Updated record with ID: 54 : 127.0.0.1', 'news', '2012-02-07 00:06:45', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (108, 1, 'Created record with ID: 55 : 127.0.0.1', 'news', '2012-02-07 00:27:33', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (109, 1, 'Created record with ID: 56 : 127.0.0.1', 'news', '2012-02-07 00:28:45', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (110, 1, 'Created record with ID: 57 : 127.0.0.1', 'news', '2012-02-07 00:29:28', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (111, 1, 'Created record with ID: 58 : 127.0.0.1', 'news', '2012-02-07 00:30:26', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (112, 1, 'Created record with ID: 59 : 127.0.0.1', 'news', '2012-02-07 00:31:07', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (113, 1, 'Created record with ID: 60 : 127.0.0.1', 'news', '2012-02-07 00:33:17', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (114, 1, 'Created record with ID: 61 : 127.0.0.1', 'news', '2012-02-07 00:33:50', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (115, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-07 09:13:21', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (116, 1, 'Created record with ID: 62 : 127.0.0.1', 'news', '2012-02-07 09:32:35', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (117, 1, 'Created record with ID: 63 : 127.0.0.1', 'news', '2012-02-07 09:33:29', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (118, 1, 'Created record with ID: 64 : 127.0.0.1', 'news', '2012-02-07 09:34:16', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (119, 1, 'Created record with ID: 65 : 127.0.0.1', 'news', '2012-02-07 09:35:26', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (120, 1, 'Created record with ID: 66 : 127.0.0.1', 'news', '2012-02-07 09:36:18', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (121, 1, 'Created record with ID: 67 : 127.0.0.1', 'news', '2012-02-07 09:37:02', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (122, 1, 'Created record with ID: 68 : 127.0.0.1', 'news', '2012-02-07 09:37:56', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (123, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-07 17:54:19', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (124, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-07 18:21:24', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (125, 1, 'Created record with ID: 69 : 127.0.0.1', 'news', '2012-02-07 18:30:11', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (126, 1, 'Updated record with ID: 68 : 127.0.0.1', 'news', '2012-02-07 18:53:01', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (127, 1, 'Deleted record with ID: 69 : 127.0.0.1', 'news', '2012-02-07 19:04:48', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (128, 1, 'Updated record with ID: 40 : 127.0.0.1', 'news', '2012-02-07 19:06:17', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (129, 1, 'Updated record with ID: 40 : 127.0.0.1', 'news', '2012-02-07 19:06:32', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (130, 1, 'Updated record with ID: 68 : 127.0.0.1', 'news', '2012-02-07 19:08:14', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (131, 1, 'Updated record with ID: 68 : 127.0.0.1', 'news', '2012-02-07 19:21:28', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (132, 1, 'Updated record with ID: 68 : 127.0.0.1', 'news', '2012-02-07 19:22:05', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (133, 1, 'Updated record with ID: 68 : 127.0.0.1', 'news', '2012-02-07 19:22:36', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (134, 1, 'Updated record with ID: 68 : 127.0.0.1', 'news', '2012-02-07 19:23:02', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (135, 1, 'Updated record with ID: 68 : 127.0.0.1', 'news', '2012-02-07 19:23:34', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (136, 1, 'Updated record with ID: 43 : 127.0.0.1', 'news', '2012-02-07 19:23:59', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (137, 1, 'Deleted record with ID: 68 : 127.0.0.1', 'news', '2012-02-07 19:26:55', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (138, 1, 'Created record with ID: 70 : 127.0.0.1', 'news', '2012-02-07 19:28:02', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (139, 1, 'Updated record with ID: 70 : 127.0.0.1', 'news', '2012-02-07 19:31:16', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (140, 1, 'Updated record with ID: 70 : 127.0.0.1', 'news', '2012-02-07 19:32:01', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (141, 1, 'Updated record with ID: 70 : 127.0.0.1', 'news', '2012-02-07 19:33:03', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (142, 1, 'Updated record with ID: 70 : 127.0.0.1', 'news', '2012-02-07 19:33:29', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (143, 1, 'Created record with ID: 71 : 127.0.0.1', 'news', '2012-02-07 19:46:11', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (144, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-08 10:27:42', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (145, 1, 'Created record with ID: 72 : 127.0.0.1', 'news', '2012-02-08 10:28:52', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (146, 1, 'Updated record with ID: 42 : 127.0.0.1', 'news', '2012-02-08 10:29:48', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (147, 1, 'Updated record with ID: 42 : 127.0.0.1', 'news', '2012-02-08 10:30:12', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (148, 1, 'Deleted record with ID: 72 : 127.0.0.1', 'news', '2012-02-08 10:46:27', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (149, 1, 'Created record with ID: 73 : 127.0.0.1', 'news', '2012-02-08 10:48:38', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (150, 1, 'Created record with ID: 74 : 127.0.0.1', 'news', '2012-02-08 10:59:15', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (151, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-10 09:01:33', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (152, 1, 'Created record with ID: 75 : 127.0.0.1', 'news', '2012-02-10 09:01:58', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (153, 1, 'Created record with ID: 76 : 127.0.0.1', 'news', '2012-02-10 11:04:07', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (154, 1, 'Updated record with ID: 76 : 127.0.0.1', 'news', '2012-02-10 11:05:26', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (155, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-11 18:25:48', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (156, 1, 'Created record with ID: 77 : 127.0.0.1', 'news', '2012-02-11 18:27:45', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (157, 1, 'Updated record with ID: 77 : 127.0.0.1', 'news', '2012-02-11 18:28:03', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (158, 1, 'Created record with ID: 78 : 127.0.0.1', 'news', '2012-02-11 18:33:24', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (159, 1, 'Created record with ID: 79 : 127.0.0.1', 'news', '2012-02-11 19:50:08', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (160, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-13 08:47:14', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (161, 1, 'Updated record with ID: 40 : 127.0.0.1', 'news', '2012-02-13 08:47:38', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (162, 1, 'Created Module: Test : 127.0.0.1', 'modulebuilder', '2012-02-13 09:11:51', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (163, 1, 'Created record with ID: 80 : 127.0.0.1', 'news', '2012-02-13 09:26:02', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (164, 1, 'Created record with ID: 81 : 127.0.0.1', 'news', '2012-02-13 09:26:43', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (165, 1, 'Created record with ID: 82 : 127.0.0.1', 'news', '2012-02-13 09:33:02', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (166, 1, 'Updated record with ID: 82 : 127.0.0.1', 'news', '2012-02-13 09:36:35', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (167, 1, 'Created record with ID: 83 : 127.0.0.1', 'news', '2012-02-13 09:41:44', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (168, 1, 'Updated record with ID: 41 : 127.0.0.1', 'news', '2012-02-13 09:45:16', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (169, 1, 'Updated record with ID: 40 : 127.0.0.1', 'news', '2012-02-13 09:46:11', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (170, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-13 21:13:58', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (171, 1, 'Created record with ID: 1 : 127.0.0.1', 'test', '2012-02-13 22:02:56', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (172, 1, 'Created record with ID: 2 : 127.0.0.1', 'test', '2012-02-13 22:16:34', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (173, 1, 'Created record with ID: 3 : 127.0.0.1', 'test', '2012-02-13 22:21:29', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (174, 1, 'Created record with ID: 4 : 127.0.0.1', 'test', '2012-02-13 22:23:02', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (175, 1, 'Created record with ID: 5 : 127.0.0.1', 'test', '2012-02-13 22:25:13', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (176, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-14 17:23:51', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (177, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-14 19:48:46', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (178, 1, 'Created record with ID: 6 : 127.0.0.1', 'test', '2012-02-14 20:00:41', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (179, 1, 'Created record with ID: 7 : 127.0.0.1', 'test', '2012-02-14 20:35:42', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (180, 1, 'Created record with ID: 8 : 127.0.0.1', 'test', '2012-02-14 21:19:49', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (181, 1, 'Created record with ID: 9 : 127.0.0.1', 'test', '2012-02-14 21:39:11', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (182, 1, 'Created record with ID: 10 : 127.0.0.1', 'test', '2012-02-14 21:55:06', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (183, 1, 'Created record with ID: 11 : 127.0.0.1', 'test', '2012-02-14 22:00:15', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (184, 1, 'Created record with ID: 12 : 127.0.0.1', 'test', '2012-02-14 22:11:24', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (185, 1, 'Created record with ID: 13 : 127.0.0.1', 'test', '2012-02-14 22:12:34', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (186, 1, 'Created record with ID: 14 : 127.0.0.1', 'test', '2012-02-14 22:13:12', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (187, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-15 08:50:27', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (188, 1, 'Created record with ID: 15 : 127.0.0.1', 'test', '2012-02-15 09:13:01', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (189, 1, 'Created record with ID: 16 : 127.0.0.1', 'test', '2012-02-15 09:24:02', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (190, 1, 'Created record with ID: 17 : 127.0.0.1', 'test', '2012-02-15 09:26:30', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (191, 1, 'Created record with ID: 18 : 127.0.0.1', 'test', '2012-02-15 10:02:07', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (192, 1, 'Created record with ID: 19 : 127.0.0.1', 'test', '2012-02-15 11:16:20', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (193, 1, 'Created record with ID: 20 : 127.0.0.1', 'test', '2012-02-15 11:19:00', 0);
+INSERT INTO bf_activities (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES (194, 1, 'logged in from: 127.0.0.1', 'users', '2012-02-16 08:32:14', 0);
+
+
+#
+# TABLE STRUCTURE FOR: bf_email_queue
+#
+
+CREATE TABLE `bf_email_queue` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `to_email` varchar(128) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `message` text NOT NULL,
+  `alt_message` text,
+  `max_attempts` int(11) NOT NULL DEFAULT '3',
+  `attempts` int(11) NOT NULL DEFAULT '0',
+  `success` tinyint(1) NOT NULL DEFAULT '0',
+  `date_published` datetime DEFAULT NULL,
+  `last_attempt` datetime DEFAULT NULL,
+  `date_sent` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+#
+# TABLE STRUCTURE FOR: bf_image
+#
+
+CREATE TABLE `bf_image` (
+  `id` smallint(6) NOT NULL,
+  `img_path` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO bf_image (`id`, `img_path`) VALUES (1, '');
+
+
+#
+# TABLE STRUCTURE FOR: bf_login_attempts
+#
+
+CREATE TABLE `bf_login_attempts` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `ip_address` varchar(40) NOT NULL,
+  `login` varchar(50) NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+#
+# TABLE STRUCTURE FOR: bf_news
+#
+
+CREATE TABLE `bf_news` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `news_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `news_category` text NOT NULL,
+  `news_title` text NOT NULL,
+  `news_img_path` varchar(20) DEFAULT NULL,
+  `news_text` longtext NOT NULL,
+  `news_author` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=84 DEFAULT CHARSET=utf8;
+
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (40, '2012-02-13 11:46:11', 'box', 'Мексиканские страсти', 'box1.jpg', 'Карлос Кондит стал временным чемпионом UFC в полусреднем весе, сломив сопротивление Ника Диаса, а Фабрисью Вердум вернулся в организацию с уверенной победой над Роем Нельсоном. ', '');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (41, '2012-02-13 11:45:16', 'hockey', '«Ак Барс» – СКА – 5:6. Как это было', 'match2.jpg', 'Хоккеисты «Ак Барса» и СКА подарили зрителям настоящий спектакль с 10 шайбами в основное время и серией буллитов.<br> Кроме того, в матче успели поиграть все заявленные голкиперы, включая Максима Соколова, для которого это был первый матч в сезоне. Ветеран, к слову, показал свой высочайший класс. Все детали сверхинтересного матча – в текстовой трансляции Sports.ru.', 'betteam.ru');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (42, '2012-02-08 12:30:12', 'other', '\"Подвижные заслоны дело рук и ног Юинга\"', 'nigers1.jpg', 'Об общении с Хэйвордом и Хиллом, поддержании формы во время предыдущего локаута, \"подвижных\" заслонах, удивлениях и разочарованиях сезона и многом другом в окончании интервью Реджи Миллера. ', '0');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (43, '0000-00-00 00:00:00', 'football', 'Домашняя победа', 'ski.jpg', 'Победа в скиатлоне <b>Максима Вылегжанина</b>, минимальное лидерство Юстины Ковальчик в общем зачёте и возвращение Евгения Дементьева в обзоре Кубка мира по лыжным гонкам в Рыбинске ', '0');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (44, '0000-00-00 00:00:00', 'football', 'Фабио против ФА', 'fabio.jpg', 'Что думает Капелло о лишении Терри капитанского звания, Виллаш-Боаш о работе Уэбба, а вице-президент \"Барсы\" о возможной покупке ван Перси? Ответы на эти вопросы в обзоре прессы. ', '');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (62, '0000-00-00 00:00:00', 'football', 'Непревзойдённый кот', '', 'В заключительном матче 24-го тура чемпионата Англии \"Ливерпуль\" и \"Тоттенхэм\" разошлись миром, а самым ярким событием встречи стал забег симпатичного кота по полю \"Энфилда\". ', '');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (63, '0000-00-00 00:00:00', 'hockey', 'Зайнуллин: \"Динамо\" играло грубо? Не заметил', 'dynamo.jpg', 'ападающий \"Торпедо\" Руслан Зайнуллин рассказал о слабостях команды в последних домашних играх и о единственной проблеме во взаимоотношениях с Робертом Нильссоном. ', '');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (64, '0000-00-00 00:00:00', 'tennis', 'Собкин: Миша хорошо провёл подготовку в межсезонье', 'sobkin.jpg', 'Специально для \"Чемпионат.com\" бессменный тренер Михаила Южного Борис Собкин рассказал о победном дубле своего подопечного на турнире в Загребе, его спортивной форме и ближайших планах. ', '');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (65, '0000-00-00 00:00:00', 'other', 'Рыцари зимнего ветра', 'knights.jpg', 'Искрящийся снег, яркие паруса и гонщики в шлемах в минувший уик-энд на подмосковном озере Сенеж было чем подивиться: прошёл очередной ЧР по парусному спорту в классе \"зимний виндсёрфинг\". ', '');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (66, '0000-00-00 00:00:00', 'other', 'Только бы не подвела погода', 'wether.jpg', 'В Сочи всё готово к началу тестовых стартов. На курорт \"Роза Хутор\" съезжаются участники этапа Кубка мира по горным лыжам. А на хребте Псехако стартует Кубок России по биатлону. ', '');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (67, '0000-00-00 00:00:00', 'other', 'Гараничев и партнёры', 'biathlon.jpg', 'По итогам мужского масс-старта в первой шестёрке оказались сразу три россиянина. Евгений Гараничев занял третье место, а выиграл гонку норвежец Эмиль-Хегле Свендсен. ', '');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (70, '2012-02-07 21:33:29', 'other', 'Только бы не подвела погода', 'mini11.jpg', 'В Сочи всё готово к началу тестовых стартов. На курорт \"Роза Хутор\" съезжаются участники этапа Кубка мира по горным лыжам. А на хребте Псехако стартует Кубок России по биатлону.', '0');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (71, '2012-02-07 21:46:11', 'basketball', 'fgdfgdfgdfgdfgdfgdfg', '', '<img src=\'http://football.sport.ua/images/news/0/3/140/orig_148149.jpg\' />', 'sd');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (73, '2012-02-08 12:48:38', 'football', 'fdhg', 'sport.jpg', 'fdhh', '');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (74, '2012-02-08 12:59:15', 'football', 'f', 'sport3.jpg', 'fdg', '');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (75, '2012-02-10 11:01:58', 'football', 'Saturnus', 'xyrma.jpg', 'I Long....', '');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (76, '2012-02-10 13:05:26', 'boks', 'В дальнейшем будем приглашать в Россию звёзд', 'box1.jpg', 'Владимир, подведите итоги минувшего турнира.\r\nТурнир был колоссальный по напряжению. Невозможно было предсказать результаты, особенно в поединке Сергей Рожнов Оуен Бек. Также был тяжёлый бой у Григория Дрозда. Тем не менее Гриша справился с задачей, триумфально вернувшись в профессиональный бокс. Аллахвердиев же, победив Мендосу, вошёл в топ-10 своего веса. Что касается проведения турнира, то я призываю болельщиков покупать билеты и посещать подобные мероприятия, это крайне важно для нынешнего профи-бокса.Турнир был колоссальный по напряжению. Невозможно было предсказать результаты, особенно в поединке Сергей Рожнов Оуен Бек.\r\n\r\nЧто касается Сергея Рожнова, оказал ли Бек, по вашему мнению, достойное сопротивление россиянину?\r\nДа, оба имели возможность победить. Сергей несколько волновался, поскольку у него совсем нет опыта выступлений в профессионалах. Мне кажется, идея с привлечением Рожнова в профи была блестяще реализована.\r\n\r\nЧто можете сказать о возвращении Григория Дрозда? Не показалось ли вам, что на фоне огромного желания победить россиянину не хватало боевых кондиций?\r\nБыл большой перерыв, и это нужно учитывать. Мы будем работать над повышением технико-тактических действий, и прибавлять от боя к бою. По секрету скажу, нам уже предложили бой за титул чемпиона мира.\r\n', '0');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (77, '2012-02-11 20:28:03', 'football', 'Забивал Руни торжествовал Эвра', 'dynamo3.jpg', 'Cтрастный и не лишенный скандальности вследствие поведения Суареса и Эвра центральный матч 25-го тура чемпионата Англии завершился победой \"МЮ\" над \"Ливерпулем\" 2:1. ', '0');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (78, '2012-02-11 20:33:24', 'other', 'М. Фуркад: сегодня я соревновался только с собой', 'swidal.jpg', 'Мужской спринт в Контиолахти закончился победой Мартена Фуркада, совсем немного ему уступили Лапшин и Вегер. Впечатления о гонке из уст её непосредственных участников. ', 'betteam.ru');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (79, '2012-02-11 21:50:08', 'football', 'Манчестер Юнайтед сильнее Ливерпуля ', 'liver.jpg', 'Луис Суарес впервые после скандала вышел на поле против Патриса Эвра', 'sport.ua');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (82, '2012-02-13 11:36:35', 'other', 'Маленький герой большого бокса!', 'box2.jpg', 'Мэнни Пакьяо снова на вершине?', '0');
+INSERT INTO bf_news (`id`, `news_date`, `news_category`, `news_title`, `news_img_path`, `news_text`, `news_author`) VALUES (83, '2012-02-13 11:41:44', 'box', 'Маленький герой большого бокса!', '', 'Мэнни Пакьяо снова на вершине!!!', 'xz');
+
+
+#
+# TABLE STRUCTURE FOR: bf_news_blog
+#
+
+CREATE TABLE `bf_news_blog` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `news_blog_text` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+#
+# TABLE STRUCTURE FOR: bf_permissions
+#
+
+CREATE TABLE `bf_permissions` (
+  `permission_id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `description` varchar(100) DEFAULT NULL,
+  `status` enum('active','inactive','deleted') DEFAULT 'active',
+  PRIMARY KEY (`permission_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=83 DEFAULT CHARSET=utf8;
+
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (1, 'Site.Signin.Allow', 'Allow users to login to the site', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (2, 'Site.Content.View', 'Allow users to view the Content Context', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (3, 'Site.Reports.View', 'Allow users to view the Reports Context', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (4, 'Site.Settings.View', 'Allow users to view the Settings Context', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (5, 'Site.Developer.View', 'Allow users to view the Developer Context', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (6, 'Bonfire.Roles.Manage', 'Allow users to manage the user Roles', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (7, 'Bonfire.Users.Manage', 'Allow users to manage the site Users', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (8, 'Bonfire.Users.View', 'Allow users access to the User Settings', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (9, 'Bonfire.Users.Add', 'Allow users to add new Users', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (10, 'Bonfire.Database.Manage', 'Allow users to manage the Database settings', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (11, 'Bonfire.Emailer.Manage', 'Allow users to manage the Emailer settings', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (12, 'Bonfire.Logs.View', 'Allow users access to the Log details', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (13, 'Bonfire.Logs.Manage', 'Allow users to manage the Log files', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (14, 'Bonfire.Emailer.View', 'Allow users access to the Emailer settings', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (15, 'Site.Signin.Offline', 'Allow users to login to the site when the site is offline', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (16, 'Permissions.Settings.View', 'Allow access to view the Permissions menu unders Settings Context', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (17, 'Permissions.Settings.Manage', 'Allow access to manage the Permissions in the system', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (18, 'Bonfire.Roles.Delete', 'Allow users to delete user Roles', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (19, 'Bonfire.Modules.Add', 'Allow creation of modules with the builder.', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (20, 'Bonfire.Modules.Delete', 'Allow deletion of modules.', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (21, 'Permissions.Administrator.Manage', 'To manage the access control permissions for the Administrator role.', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (22, 'Permissions.Editor.Manage', 'To manage the access control permissions for the Editor role.', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (23, 'Permissions.Banned.Manage', 'To manage the access control permissions for the Banned role.', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (24, 'Permissions.User.Manage', 'To manage the access control permissions for the User role.', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (25, 'Permissions.Developer.Manage', 'To manage the access control permissions for the Developer role.', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (26, 'Bonfire.Activities.Manage', 'Allow users to access the Activities Reports', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (27, 'Activities.Own.View', 'To view the users own activity logs', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (28, 'Activities.Own.Delete', 'To delete the users own activity logs', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (29, 'Activities.User.View', 'To view the user activity logs', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (30, 'Activities.User.Delete', 'To delete the user activity logs, except own', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (31, 'Activities.Module.View', 'To view the module activity logs', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (32, 'Activities.Module.Delete', 'To delete the module activity logs', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (33, 'Activities.Date.View', 'To view the users own activity logs', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (34, 'Activities.Date.Delete', 'To delete the dated activity logs', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (35, 'News.Content.View', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (36, 'News.Content.Create', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (37, 'News.Content.Edit', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (38, 'News.Content.Delete', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (39, 'News.Reports.View', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (40, 'News.Reports.Create', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (41, 'News.Reports.Edit', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (42, 'News.Reports.Delete', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (43, 'News.Settings.View', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (44, 'News.Settings.Create', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (45, 'News.Settings.Edit', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (46, 'News.Settings.Delete', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (47, 'News.Developer.View', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (48, 'News.Developer.Create', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (49, 'News.Developer.Edit', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (50, 'News.Developer.Delete', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (51, 'News_Blog.Content.View', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (52, 'News_Blog.Content.Create', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (53, 'News_Blog.Content.Edit', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (54, 'News_Blog.Content.Delete', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (55, 'News_Blog.Reports.View', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (56, 'News_Blog.Reports.Create', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (57, 'News_Blog.Reports.Edit', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (58, 'News_Blog.Reports.Delete', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (59, 'News_Blog.Settings.View', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (60, 'News_Blog.Settings.Create', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (61, 'News_Blog.Settings.Edit', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (62, 'News_Blog.Settings.Delete', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (63, 'News_Blog.Developer.View', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (64, 'News_Blog.Developer.Create', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (65, 'News_Blog.Developer.Edit', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (66, 'News_Blog.Developer.Delete', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (67, 'Test.Content.View', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (68, 'Test.Content.Create', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (69, 'Test.Content.Edit', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (70, 'Test.Content.Delete', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (71, 'Test.Reports.View', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (72, 'Test.Reports.Create', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (73, 'Test.Reports.Edit', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (74, 'Test.Reports.Delete', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (75, 'Test.Settings.View', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (76, 'Test.Settings.Create', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (77, 'Test.Settings.Edit', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (78, 'Test.Settings.Delete', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (79, 'Test.Developer.View', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (80, 'Test.Developer.Create', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (81, 'Test.Developer.Edit', '', 'active');
+INSERT INTO bf_permissions (`permission_id`, `name`, `description`, `status`) VALUES (82, 'Test.Developer.Delete', '', 'active');
+
+
+#
+# TABLE STRUCTURE FOR: bf_role_permissions
+#
+
+CREATE TABLE `bf_role_permissions` (
+  `role_id` int(11) NOT NULL,
+  `permission_id` int(11) NOT NULL,
+  PRIMARY KEY (`role_id`,`permission_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 1);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 2);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 3);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 4);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 5);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 6);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 7);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 8);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 9);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 10);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 11);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 12);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 13);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 14);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 15);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 16);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 17);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 18);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 19);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 20);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 21);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 22);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 23);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 24);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 25);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 26);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 27);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 28);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 29);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 30);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 31);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 32);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 33);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 34);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 35);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 36);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 37);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 38);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 39);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 40);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 41);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 42);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 43);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 44);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 45);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 46);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 47);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 48);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 49);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 50);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 51);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 52);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 53);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 54);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 55);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 56);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 57);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 58);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 59);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 60);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 61);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 62);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 63);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 64);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 65);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 66);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 67);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 68);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 69);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 70);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 71);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 72);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 73);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 74);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 75);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 76);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 77);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 78);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 79);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 80);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 81);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (1, 82);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (2, 1);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (2, 2);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (2, 3);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (4, 1);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (6, 1);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (6, 2);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (6, 3);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (6, 4);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (6, 5);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (6, 6);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (6, 7);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (6, 8);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (6, 9);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (6, 10);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (6, 11);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (6, 12);
+INSERT INTO bf_role_permissions (`role_id`, `permission_id`) VALUES (6, 13);
+
+
+#
+# TABLE STRUCTURE FOR: bf_roles
+#
+
+CREATE TABLE `bf_roles` (
+  `role_id` int(11) NOT NULL AUTO_INCREMENT,
+  `role_name` varchar(60) NOT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `default` tinyint(1) NOT NULL DEFAULT '0',
+  `can_delete` tinyint(1) NOT NULL DEFAULT '1',
+  `login_destination` varchar(255) NOT NULL DEFAULT '/',
+  `deleted` int(1) DEFAULT '0',
+  PRIMARY KEY (`role_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+INSERT INTO bf_roles (`role_id`, `role_name`, `description`, `default`, `can_delete`, `login_destination`, `deleted`) VALUES (1, 'Administrator', 'Has full control over every aspect of the site.', 0, 0, '', 0);
+INSERT INTO bf_roles (`role_id`, `role_name`, `description`, `default`, `can_delete`, `login_destination`, `deleted`) VALUES (2, 'Editor', 'Can handle day-to-day management, but does not have full power.', 0, 1, '', 0);
+INSERT INTO bf_roles (`role_id`, `role_name`, `description`, `default`, `can_delete`, `login_destination`, `deleted`) VALUES (3, 'Banned', 'Banned users are not allowed to sign into your site.', 0, 0, '', 0);
+INSERT INTO bf_roles (`role_id`, `role_name`, `description`, `default`, `can_delete`, `login_destination`, `deleted`) VALUES (4, 'User', 'This is the default user with access to login.', 1, 0, '', 0);
+INSERT INTO bf_roles (`role_id`, `role_name`, `description`, `default`, `can_delete`, `login_destination`, `deleted`) VALUES (6, 'Developer', 'Developers typically are the only ones that can access the developer tools. Otherwise identical to Administrators, at least until the site is handed off.', 0, 1, '', 0);
+
+
+#
+# TABLE STRUCTURE FOR: bf_schema_version
+#
+
+CREATE TABLE `bf_schema_version` (
+  `type` varchar(20) NOT NULL,
+  `version` int(4) DEFAULT '0',
+  PRIMARY KEY (`type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO bf_schema_version (`type`, `version`) VALUES ('app_', 0);
+INSERT INTO bf_schema_version (`type`, `version`) VALUES ('core', 14);
+INSERT INTO bf_schema_version (`type`, `version`) VALUES ('news_', 2);
+INSERT INTO bf_schema_version (`type`, `version`) VALUES ('news_blog_', 2);
+INSERT INTO bf_schema_version (`type`, `version`) VALUES ('test_', 2);
+
+
+#
+# TABLE STRUCTURE FOR: bf_schema_version_old
+#
+
+CREATE TABLE `bf_schema_version_old` (
+  `version` int(4) DEFAULT '0',
+  `app_version` int(4) DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO bf_schema_version_old (`version`, `app_version`) VALUES (11, 0);
+
+
+#
+# TABLE STRUCTURE FOR: bf_sessions
+#
+
+CREATE TABLE `bf_sessions` (
+  `session_id` varchar(40) NOT NULL DEFAULT '0',
+  `ip_address` varchar(16) NOT NULL DEFAULT '0',
+  `user_agent` varchar(50) NOT NULL,
+  `last_activity` int(10) unsigned NOT NULL DEFAULT '0',
+  `user_data` text,
+  PRIMARY KEY (`session_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+#
+# TABLE STRUCTURE FOR: bf_settings
+#
+
+CREATE TABLE `bf_settings` (
+  `name` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `module` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`name`),
+  UNIQUE KEY `unique - name` (`name`),
+  KEY `index - name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('auth.allow_register', 'core', '1');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('auth.allow_remember', 'core', '1');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('auth.do_login_redirect', 'core', '1');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('auth.login_type', 'core', 'email');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('auth.remember_length', 'core', '1209600');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('auth.use_extended_profile', 'core', '0');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('auth.use_own_names', 'core', '1');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('auth.use_usernames', 'core', '1');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('mailpath', 'email', '/usr/sbin/sendmail');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('protocol', 'email', 'mail');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('sender_email', 'email', '');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('site.list_limit', 'core', '25');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('site.show_front_profiler', 'core', '0');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('site.show_profiler', 'core', '0');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('site.status', 'core', '1');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('site.system_email', 'core', 'o-makdeb@yandex.ru');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('site.title', 'core', 'Run For The Victory');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('smtp_host', 'email', '');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('smtp_pass', 'email', '');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('smtp_port', 'email', '');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('smtp_timeout', 'email', '');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('smtp_user', 'email', '');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('updates.bleeding_edge', 'core', '1');
+INSERT INTO bf_settings (`name`, `module`, `value`) VALUES ('updates.do_check', 'core', '1');
+
+
+#
+# TABLE STRUCTURE FOR: bf_test_test
+#
+
+CREATE TABLE `bf_test_test` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `test_test_cat` varchar(30) NOT NULL,
+  `test_test_note` longtext NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
+
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (1, '30', '<blockquote style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 40px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">\r\n    <p>Как стало известно Sport.ua, защитник «Металлиста» Александр Романчук вторую часть сезона проведет на правах аренды за луцкую «<span style=\"color: #ff1010; \">Волынь</span>», которую не так давно возглавил <strong>Анатолий Демьяненко</strong>. Напомним, что экс-игрок сборной Украины уже работал под руководством Демьяненко в киевском «Динамо».</p><hr />\r\n  </blockquote>А вот, на кого не рассчитывает Демьяненко во второй части сезона, так это бразилец Гобер и игрок молодежной сборной Украины <span style=\"background-color: #ffff1f; \">Евгений Павлов</span>, который, видимо, занят поисками нового клуба. Оба футболиста остались в Луцке, и будут работать с резервным составом. \r\n  <p> </p>');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (2, '30', '<div style=\"text-align: left; \">А вот, на кого не рассчитывает <a href=\"localhost/news\" target=\"_blank\" style=\"color: #ff0000; \">Демьяненко</a> во второй части сезона, так это бразилец Гобер и игрок молодежной сборной Украины Евгений Павлов, который, видимо, занят поисками нового клуба. Оба футболиста остались в Луцке, и будут работать с резервным составом.</div>');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (3, '30', '<p><font face=\"Tahoma\" size=\"2\">Как стало известно </font><a href=\"sport.ua\" style=\"font-family: Tahoma; font-size: 13px; \">Sport.ua</a><span style=\"font-family: Tahoma; font-size: 13px; \">, защитник «Металлиста» Александр Романчук вторую часть сезона проведет на правах аренды за луцкую «Волынь», которую не так давно возглавил Анатолий Демьяненко. Напомним, что экс-игрок сборной Украины уже работал под руководством Демьяненко в киевском «Динамо».</span></p> \r\n  <p> </p> \r\n  <p><img src=\"http://football.sport.ua/images/news/0/3/143/orig_148755.jpg\" alt=\"Трансферное окно\" hspace=\"5\" vspace=\"5\" align=\"left\" /> <span style=\"font-family: Tahoma; font-size: 13px; \">А вот, на кого не рассчитывает&nbsp;</span></p> \r\n  <p><br /></p>');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (4, '30', '<font face=\"Tahoma\" size=\"2\" style=\"color: #333333; background-color: #fcfcfc; \">Как стало известно </font><a href=\"http://sport.ua\" style=\"color: #0066cc; text-decoration: none; background-color: #fcfcfc; font-family: Tahoma; font-size: 13px; \">Sport.ua</a><span style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; vertical-align: baseline; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #fcfcfc; color: #333333; font-family: Tahoma; font-size: 13px; \">, защитник «Металлиста» Александр Романчук вторую часть сезона проведет на правах аренды за луцкую «Волынь», которую не так давно возглавил Анатолий Демьяненко. Напомним, что экс-игрок сборной Украины уже работал под руководством Демьяненко в киевском «Динамо».</span>');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (5, '30', '<table style=\"width: 100%; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: dotted; border-right-style: dotted; border-bottom-style: dotted; border-left-style: dotted; border-top-color: #000000; border-right-color: #000000; border-bottom-color: #000000; border-left-color: #000000; border-image: initial; border-collapse: collapse; \" cellpadding=\"5\">\r\n    <tbody>\r\n      <tr>\r\n        <td style=\"width: 50%; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: dotted; border-right-style: dotted; border-bottom-style: dotted; border-left-style: dotted; border-top-color: #000000; border-right-color: #000000; border-bottom-color: #000000; border-left-color: #000000; border-image: initial; \">&nbsp;па</td>\r\n        <td style=\"width: 50%; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: dotted; border-right-style: dotted; border-bottom-style: dotted; border-left-style: dotted; border-top-color: #000000; border-right-color: #000000; border-bottom-color: #000000; border-left-color: #000000; border-image: initial; \">&nbsp;варпвар</td>\r\n      </tr>\r\n    </tbody>\r\n  </table><br />');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (6, '30', '<p>Сегодня в Европу возвращается большой футбол — Лига чемпионов и Лига Европы. В главном еврокубковом турнире начинается стадия 1/8 финала, которая сегодня стартует двумя матчами — в Леверкузене и Лионе.</p> \r\n  <blockquote style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 40px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">\r\n    <p>Леверкузенскому «Байеру» не позавидуешь. В 1/8 финала Лиги чемпионов УЕФА его соперником будет действующий победитель турнира «Барселона», что до предела усложнит задачу леверкузенцев по выходу в четвертьфинал, до которого они не добирались десять лет.</p>\r\n  </blockquote>');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (7, '30', '<p><strong>В следующем сезоне жребий вновь свел команды в одну группу. На сей раз удача сопутствовала только «Барселоне» - 2:1 на выезде и 2:0 дома. Цвета сине-гранатовых в тех матчах защищали Пуйоль, Хави и Андрес Иниеста.Предыдущие встречи</strong></p> \r\n  <p>Первым испанским соперником «Байера» в еврокубках стала как раз «Барселона», уступившая немцам в триумфальном для них розыгрыше Кубка УЕФА-1987/88. В первой встрече была зафиксирована нулевая ничья, а в ответной дуэли все решил единственный мяч Милтона Титы, забитый нынешнему спортивному директору каталонцев Андони Субисаррете. Впоследствии дружина Эрика Риббека завоевала трофей, переиграв в финале «Эспаньол».</p> \r\n  <p>На групповом этапе ЛЧ-2001/01 «Байер» и «Барса» обменялись домашними победами со счетом 2:1. В этих матчах Михаэлю Баллаку противостояли Карлес Пуйоль и Хави Эрнандес.</p> \r\n  <p>В следующем сезоне жребий вновь свел команды в одну группу. На сей раз удача сопутствовала только «Барселоне» - 2:1 на выезде и 2:0 дома. Цвета сине-гранатовых в тех матчах защищали Пуйоль, Хави и Андрес Иниеста.⁞</p>');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (8, '30', '<span style=\"font-family: Verdana, Arial, \'Bitstream Vera Sans\', Helvetica, sans-serif; font-size: 13px; \">Plugins are optional extras (although currently distributed with Xinha anyway) which provide enhanced functions to the Xinha editor. If you are interested in writing a plugin, try the </span><a class=\"wiki\" href=\"http://trac.xinha.org/wiki/PluginTutorial\" style=\"text-decoration: none; color: #bb0000; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #bbbbbb; font-family: Verdana, Arial, \'Bitstream Vera Sans\', Helvetica, sans-serif; font-size: 13px; \">PluginTutorial</a><span style=\"font-family: Verdana, Arial, \'Bitstream Vera Sans\', Helvetica, sans-serif; font-size: 13px; \"> and reading the source code of one of the simpler plugins.</span>');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (9, '30', '<img src=\"/bonfire/themes/admin/js/editors/xinha/plugins/ImageManager/demo_images/bikerpeep.jpg\" alt=\"bikerpeep.jpg\" width=\"150\" height=\"113\" />');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (10, '30', 'еарнпро');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (11, '30', '<div>The&nbsp;<a class=\"wiki\" href=\"http://trac.xinha.org/wiki/ImageManager\" style=\"color: #000000; \">ImageManager</a> <a href=\"sport.ua\">plugin</a> provides a means for users to upload, manipulate (resize, rotate, crop etc), delete and organise (into directories) images, and then insert them into the HTML being edited.</div>');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (12, '30', '<a href=\"news\">слово</a>');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (13, '30', '<a href=\"news\">ckjdj</a>');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (14, '30', '<a href=\"news\">dsjkf</a>');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (15, '30', '<p>Карлос Кондит стал временным чемпионом UFC в полусреднем весе, сломив сопротивление Ника Диаса, а Фабрисью Вердум вернулся в организацию с уверенной победой над Роем Нельсоном. </p>');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (16, '30', '<a href=\"/news/index/40\">страсти</a><a href=\"/news/index/40\"><img src=\"/images/uploads/thumb_box1.jpg\" /></a> \r\n  <p>Карлос Кондит стал временным чемпионом UFC в полусреднем весе, сломив сопротивление Ника Диаса, а Фабрисью Вердум вернулся в организацию с уверенной победой над Роем Нельсоном.</p><br class=\"Apple-interchange-newline\" />');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (17, '30', '<pre class=\"wiki\">&amp;lt;H1&amp;gt;G\'Day &amp;amp;amp; Welcome&amp;lt;/h1&amp;gt;\r\n    &amp;lt;a href=&amp;quot;http://www.example.com/&amp;quot;&amp;gt;Hello World&amp;lt;/a&amp;gt;</pre>');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (18, '30', '<a href=\"/bonfire/themes/admin/js/editors/xinha/plugins/ExtendedFileManager/demo_images/linux/linux.gif\" title=\"linux\">d</a>');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (19, '30', '<p><img src=\"/images/uploads/thumb_xyrma.jpg\" alt=\"thumb_xyrma\" title=\"thumb_xyrma\" height=\"121\" width=\"180\" /></p>\r\n  <body>\r\n    <p>івджджівплджівпівджплівдлпджілвдп</p>\r\n    <p>івпджлівждп</p>\r\n    <p> </p>\r\n  </body>');
+INSERT INTO bf_test_test (`id`, `test_test_cat`, `test_test_note`) VALUES (20, '30', '<img src=\"/images/uploads/news/swidal.jpg\" alt=\"swidal\" title=\"swidal\" height=\"300\" width=\"400\" />');
+
+
+#
+# TABLE STRUCTURE FOR: bf_user_cookies
+#
+
+CREATE TABLE `bf_user_cookies` (
+  `user_id` bigint(20) NOT NULL,
+  `token` varchar(128) NOT NULL,
+  `created_on` datetime NOT NULL,
+  KEY `token` (`token`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+#
+# TABLE STRUCTURE FOR: bf_users
+#
+
+CREATE TABLE `bf_users` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `role_id` int(11) NOT NULL DEFAULT '4',
+  `first_name` varchar(20) DEFAULT NULL,
+  `last_name` varchar(20) DEFAULT NULL,
+  `email` varchar(120) NOT NULL,
+  `username` varchar(30) NOT NULL DEFAULT '',
+  `password_hash` varchar(40) NOT NULL,
+  `reset_hash` varchar(40) DEFAULT NULL,
+  `salt` varchar(7) NOT NULL,
+  `last_login` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `last_ip` varchar(40) NOT NULL DEFAULT '',
+  `created_on` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `street_1` varchar(255) DEFAULT NULL,
+  `street_2` varchar(255) DEFAULT NULL,
+  `city` varchar(40) DEFAULT NULL,
+  `zipcode` varchar(20) DEFAULT NULL,
+  `deleted` tinyint(1) NOT NULL DEFAULT '0',
+  `reset_by` int(10) DEFAULT NULL,
+  `country_iso` char(2) DEFAULT 'US',
+  `state_code` char(4) DEFAULT '',
+  PRIMARY KEY (`id`),
+  KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+INSERT INTO bf_users (`id`, `role_id`, `first_name`, `last_name`, `email`, `username`, `password_hash`, `reset_hash`, `salt`, `last_login`, `last_ip`, `created_on`, `street_1`, `street_2`, `city`, `zipcode`, `deleted`, `reset_by`, `country_iso`, `state_code`) VALUES (1, 1, NULL, NULL, 'o-makdeb@yandex.ru', 'makdeb', 'd11285f4319c90480c180ddac653edeeee2990c9', NULL, 'cfnyD9K', '2012-02-16 08:32:14', '127.0.0.1', '0000-00-00 00:00:00', NULL, NULL, NULL, NULL, 0, NULL, 'US', '');
+
+

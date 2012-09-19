@@ -1,0 +1,14 @@
+#
+# TABLE STRUCTURE FOR: bf_image
+#
+
+CREATE TABLE `bf_image` (
+  `id` smallint(6) NOT NULL,
+  `img_path` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO bf_image (`id`, `img_path`) VALUES (1, '');
+
+
