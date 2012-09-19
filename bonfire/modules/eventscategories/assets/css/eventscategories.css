@@ -1,0 +1,12 @@
+#image_upload_hidden_form_wrapper {
+    visibility: hidden;
+}
+
+#image_upload,#image_browse {
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+#image_preview,.image_preview {
+    border:1px solid #DDDDDD;
+}

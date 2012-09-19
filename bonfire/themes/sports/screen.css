@@ -1,0 +1,685 @@
+/* RESET */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video 
+{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  vertical-align:baseline;
+  background:transparent;
+} 
+
+h2 {
+	font-size: 1.5em;
+	padding-top: 1.15em;
+/*	border-bottom: 1px solid #ccc;  */
+	margin-bottom: 0.625em;
+	color: #111;
+	font-weight: normal;
+}
+
+body {
+	width: 100%;
+	font-size: 100%;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #333;
+ 	background: #ffffff url(images/background2.png) 0 1px repeat-x;
+}
+
+a:link, a:visited { color: #06c; text-decoration: none; }
+
+p {	margin-bottom: 1em; }
+p.small { 
+	font-size: 85%;
+	color: #999;
+	font-weight: lighter;
+	margin-left: 28%;
+}
+
+form .indent {
+	margin-left: 28%;
+}
+ul {
+	list-style-position: inside;
+	margin-left: 2em;
+}
+	
+	#body {
+	width:1000px;
+	margin:0 auto;
+	height:auto;
+
+}
+
+	#header {
+	position:relative;
+	width: 1000px;
+	height: 195px;
+	background: url(images/new_head5.png) no-repeat;
+	z-index: 1;
+}
+
+#header a {
+        position:absolute;
+        display:block;
+		text-indent: -9999%;
+}
+
+#button {
+	background: transparent url(images/met_button_t1.png) no-repeat;
+	top: 155px;
+	left: 840px;
+	height: 24px;
+	text-decoration: none;
+	color: #ffffff;
+	z-index:2;
+	_background: none;
+}
+
+#header div {
+	position: absolute;
+	top: 155px;
+	left: 840px;
+	width: 65px;
+	height: 24px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/bonfire/themes/sports/images/met_button_t1.png');
+}
+
+#button span {
+	text-indent: 0%;
+	display: block;
+    line-height: 14px;
+    padding: 3px 15px;
+	font: bold 14px Georgia,sans-serif,Arial;
+
+}
+
+#button:active {
+ /*   background-position: 48px 7px;  */
+    background: transparent url(images/met_button_t2.png) no-repeat;
+	color: #000000;  /*#BDBDBD; */
+    outline: none; /* hide dotted outline in Firefox*/
+
+}
+
+#logo {
+	top: 30px;
+	left: 10%;
+	width:250px;
+    height:80px;
+	background: url(images/main_logo8.png) no-repeat;	
+	cursor:default;
+}
+
+* html #logo {
+	/* IE hack */
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/bonfire/themes/sports/images/main_logo8.png');
+}
+
+#prognoses {
+	top:149px;
+    left:222px;
+	width:135px;
+    height:45px;
+}
+	
+#prises {
+	top:149px;
+    left:361px;
+	width:135px;
+    height:45px;
+}
+	
+#sport {
+	top:149px;
+    left:500px;
+	width:135px;
+    height:45px;
+}
+
+#about {
+	top:149px;
+    left:640px;
+	width:135px;
+    height:45px;
+}
+
+#face {
+	top:152px;
+    left:29px;
+	width:29px;
+    height:29px;
+
+	
+}
+
+#vko {
+	top:152px;
+    left:60px;
+	width:29px;
+    height:29px;
+
+	
+	
+}
+
+#twitter {
+	top:150px;
+    left:89px;
+	width:32px;
+    height:32px;
+	
+}
+
+ 	.bx-window {
+		background: transparent url(images/shadow.png) -5px -5px no-repeat;
+	}
+	
+	#slider {
+		position: relative;
+		width: 1000px;
+		height: 265px;
+		background: transparent url(images/shadow.png) -5px -5px no-repeat;
+
+	}
+	
+	#slider div img {
+		width: 1000px;
+		height: 250px;
+	}
+
+	#go-prev {
+		top: 293px;
+		width: 31px;
+		height: 31px;
+		background: transparent url(images/icon_arrow_left.png) 0 0 no-repeat;
+		_background: none;
+		z-index: 2;
+		cursor: pointer;
+	}
+/*	
+	#go-next {
+		top: 293px;
+		right: 0px;
+		width: 31px;
+		height: 31px;
+		background: transparent url(images/icon_arrow_right.png) 0 0px no-repeat;
+		_background: none;
+		z-index: 2;
+		cursor: pointer;
+	}
+	
+	
+	#go-prev:hover {
+		top: 293px;
+		width: 31px;
+		height: 31px;
+		background: transparent url(images/icon_arrow_left.png) 0px -31px no-repeat;
+		z-index: 2;
+		cursor: pointer;
+	}
+	
+	#go-next:hover {
+		top: 293px;
+		width: 31px;
+		height: 31px;
+		background: transparent url(images/icon_arrow_right.png) 0px -31px no-repeat;
+		z-index: 2;
+		cursor: pointer;
+	}
+		
+*/		
+	#circles {
+		position:absolute;
+		left:48%; 
+		top: 450px;
+		overflow: hidden;
+	}
+	
+	#circles, #ie#fix {
+		overflow: visible;
+		*overflow: hidden;
+	}
+	
+	#circles a {
+		position: absolute;
+		left: 18px;
+		display:block;
+		width: 8px;
+		height: 8px;
+		background: #4c4c4c url(images/circle_small.png) 2px 0 repeat-x;
+	}
+	
+	#circles a:hover {
+		background:#ffffff; 
+	}
+	
+	#circles .active {
+		background-color: #fafafa; /* #969696*/
+	}
+	
+	#circles a:first-child {
+		position: absolute;
+		left: 0px ;
+	}
+
+	#circles a:last-child {
+		position: absolute;
+		left: 36px;
+	}
+	
+	#circles img {
+/*		width:15px; */
+	}
+
+	#wrapper {
+	position: relative;
+	top: 30px;
+	width: 1000px;
+	height: auto;
+	background-color: transparent;
+}
+
+
+	#content {
+	padding: 20px;
+	float: left;
+	background-color: #fafafa; 
+	width: 70%;
+	height: auto;
+	min-height: 471px;
+}
+
+	#sidebar {
+	float: left;
+	background-color:#fafafa;
+	width: 260px;
+	height: auto;
+
+}
+
+
+/*#DF0101    #886A08   #847438*/
+	#sidebar #aside1 {
+	position: relative;
+	background: url(images/vip_lightred_black_good_back.png) no-repeat;
+	width: 260px;
+	height: 173px;
+	cursor: pointer;
+}	
+
+	#sidebar #aside1 span {
+		position: absolute;
+		top: 30px;
+		right: 0px;
+		display: block;
+		width: 125px;
+		height: 100px;
+		font: bold 13px Palatino Linotype,serif,Arial;
+		color: #847438;
+		font-style: italic;
+	}
+	
+	#sidebar #aside1 span p {
+		line-height: 85%;
+	}
+	
+	#sidebar #aside2 {
+/*	background-color: #ff722d;*/
+	position: relative;
+	background: #ff722d;
+	margin-bottom:1px;
+	padding-top: 20px;
+	padding-left: 25px;
+	padding-bottom:30px;
+	width: 235px;
+}
+
+	#sidebar #aside2 div {
+		position: absolute;
+		top:0px;
+		right: -5px;
+		width: 90px;
+		height: 100px;
+		background: url(images/nav_menu2.png) no-repeat;
+	
+	}
+
+* html #sidebar #aside2 div {
+	/* IE hack */
+background: none; 
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/bonfire/themes/sports/images/nav_menu2.png');
+}
+
+	#aside2 ul {
+		list-style-type: none;
+	}
+
+	#aside2 ul li {
+		/*background:#fe6c26 url(/images/ico/maximize_square.png) 0px 1px no-repeat; */
+		display: block;
+		width: 160px;
+		height: 18px;
+		background:url(images/nav_back2.png) 0px 3px no-repeat;
+		//background:url(images/nav_back2.png) 0px 0px no-repeat; 
+		margin-bottom: 2px;
+	}
+	
+	#aside2 a {
+		padding-left: 22px;
+		font: normal 13px Sans-serif;
+		font-weight:bold;
+		color: #ffffff;
+	}
+	
+	#aside2 a:hover {
+		text-decoration: underline;
+	}
+	
+	
+	#sidebar #aside3 {
+	background-color: #ffb317;
+	padding: 30px 10px 20px 25px;
+	margin-bottom:1px;
+	width: 225px;
+	color: #ffffff;
+	font: normal 12px Sans-serif;
+}
+
+	#aside3 a {
+		font: normal 13px Sans-serif;
+		color: #ffffff;
+		text-decoration: underline;
+	}
+/* #61380B  #FE642E  */
+	#aside3 a:hover {
+		color: #61380B;
+	}
+
+
+	#foo_wrap {
+		position:relative;
+		top: 30px;
+		clear:both;
+		height: 390px;
+		width: 100%;
+		color: #c6c6c6;
+		background: #4c4c4c;
+
+	}
+
+	#footer {
+	position:relative;
+	margin:0 auto;
+	width: 1000px;
+	height: auto;
+	background: #1C1C1C url(images/footer_project2.png) no-repeat;
+
+
+}
+	#footer a{
+	color: #c6c6c6;
+	text-decoration:none;
+}
+
+	#foo_left {
+	float:left;
+	margin-top: 20px;
+	margin-left: 40px;
+	
+}
+
+	#footer #one {
+	float: left;
+	
+}
+
+	#footer #two {
+	float: left;
+	margin-left: 70px;	
+	
+}
+	#footer span {
+		display:block;
+		height: 27px;
+		width: 180px;
+		border-bottom: 1px solid #808080;
+		font-family: Arial,Georgia;
+		font-size: 16px;
+		padding-top: 13px;
+	}
+
+	#foo_right {
+	float: right;
+	height:auto;
+	width: auto;
+	margin-top: 50px;
+	margin-right: 100px;
+	_margin-right: 50px;
+	padding-top:2px;
+}
+	#foo_right p {
+	color: #c6c6c6;	
+	font-family: Verdana,Georgia,Arial; 
+	font-size: 20px;
+	
+}
+	
+	#foo_right #email {
+		width: 310px;
+		height: 30px;
+		color: #c6c6c6;
+		margin-bottom: 4px;
+		background-color: #1c1c1c;
+		border:1px solid #424242;
+
+	}
+	
+	textarea {
+	padding: 0px;
+	resize: none;
+	width: 310px;
+	color: #c6c6c6;
+	background-color: #1c1c1c;
+	border: 1px solid #424242;
+	overflow: auto;
+}
+	
+	#last {
+	position: relative;
+	clear: both;
+	height: 30px;
+	color: #ffffff;
+	background-color: #000000;
+	text-align: left;
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+	#connect #submit {
+	position:relative;
+	top: 1px;
+	right: -200px;	
+}
+
+label.required { 
+	position: relative;
+	font-weight: bold;
+	_font: bold 11px Arial,Sans-serif;
+}
+
+#password {
+	_width: 149px;
+}
+
+#pass_confirm {
+	_width: 149px;
+}
+
+
+#foo_right #email.invalid {
+	border: 1px solid #faa;
+}
+
+textarea.invalid {
+	border: 1px solid #faa;
+}
+
+.publish {
+	display:inline;
+	overflow: auto;
+	margin-bottom: 25px;
+}
+
+.publish span {
+	margin-bottom: 5px;
+}
+
+#share_forec {
+	margin-top: 5px;
+	float: right;
+}
+
+/*
+.publish span {
+	position: relative;
+	left: 0px;
+	_left: 30px;
+	width: 119px;
+	height: 26px;
+	margin: 0 5px;
+	display: block;
+	float: left;
+	
+}
+*/
+
+
+
+
+/* !NOTIFICATIONS !!!!*/
+.notification {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin:  10px 0 20px 0;
+	padding: 5px 20px;
+}
+#message {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-size: 0.75em;
+	z-index: 100;
+	text-align: center;
+}
+#message .notification {
+	display: block;
+	margin: 0 auto;
+	width: auto !important;
+}
+.notification p, .notification ul {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	text-indent: none;
+}
+.attention {
+    background: #fffbcc;
+    border-color: #e6db55;
+    color: #666452;
+}
+.information {
+	background: #dbe3f0;
+	border-color: #a2b4ee;
+	color: #383b46;
+}
+.success {
+	background: #d5f0ce;
+	border-color: #9adf8f;
+	color: #556652;
+}
+.error {
+	background-color: #f0cece;
+	border-color:  #df8f8f;
+	color:  #533232;
+}
+
+
+/* BUTTONS */
+.button,
+a.button,
+input[type=submit],
+.button-group {
+	padding: 0.5em 1em;
+	position:relative;
+	top: -1px;
+	margin-left:10px;
+	font-weight:bold;
+	font-size:12px;
+	line-height: 0.95;
+	color:#333;
+	text-shadow:1px 1px 0 #fff;
+	white-space:nowrap;
+	border:none;
+	overflow:visible;
+	background:#ddd;
+	background:-webkit-gradient(linear,0% 0,0% 100%,from(#fff),to(#e1e1e1));
+	background:-moz-linear-gradient(-90deg,#fff,#e1e1e1);
+	border: 1px solid #cbcbcb;
+	border-bottom:1px solid #ababab;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+/*	-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	box-shadow:0 1px 4px rgba(0,0,0,0.3); */
+	cursor:pointer;
+}
+.button:hover,
+input[type=submit]:hover {
+	-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	border: 1px solid #ababab;
+	border-bottom: 1px solid #8b8b8b;
+	text-decoration: none;
+}
+.button:active,
+input[type=submit]:active {
+	border: 1px solid #ababab;
+	border-top: 1px solid #8b8b8b;
+	border-left: 1px solid #8b8b8b;
+	background:-webkit-gradient(linear,0% 0,0% 100%,from(#eee),to(#b1b1b1));
+	background:-moz-linear-gradient(-90deg,#ddd,#c1c1c1);
+}
+
+/* FORM */
+form div {
+	padding: 5px 0;
+}
+label {
+	display: inline-block;
+	width: 25%;
+	margin-right: 2%;
+	text-align: right;
+}
+label.remember {width: 50%;}
+input[type=text],
+input[type=email],
+input[type=password] {
+	width: 55%;
+	padding: 3px 0px;
+	color: #666;
+}
+
+fieldset {
+	border:2px groove threedface;
+}
+
+.submits {
+	width: 77%;
+	padding: 40px 50px;
+	text-align: right;
+}

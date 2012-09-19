@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /admin
+Disallow: /news
+Disallow: /bonfire/themes/admin/
+Disallow: /bonfire/themes/default/
+Disallow: /bonfire/modules/news/
+
+User-agent: Yandex
+Disallow: /admin
+Disallow: /news
+Disallow: /bonfire/themes/admin/
+Disallow: /bonfire/themes/default/
+Disallow: /bonfire/modules/news/
+Host: easyvictory.com.ua

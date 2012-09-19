@@ -1,0 +1,81 @@
+.fc-table {
+    /*border: 1px black solid;*/
+    width: 700px;
+    margin-top: 15px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.fc-table th {
+    margin: 0px;
+    padding: 10px 5px;
+    border-bottom: 1px #ffffff solid;  
+    background-color: #bb3900;
+	color: #ffffff;
+    font: bolder 10pt/12pt Arial;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.fc-table tr {
+    border-top: 1px #ffffff solid;
+	border-bottom: 1px #808080 solid;
+}
+
+.fc-table td {
+    padding: 10px 5px;
+    background-color: #ffffff; /*#b8b8b8*/
+    font: normal 10pt/12pt Arial;
+    vertical-align: middle; 
+}
+
+.fc-table td.fc-is-vip, .fc-table th.fc-is-vip {
+    width:20px;
+}
+
+.fc-table td.fc-event-name, .fc-table th.fc-event-name {
+    width:175px;
+}
+
+.fc-table td.fc-event-category, .fc-table th.fc-event-category {
+    width:105px;
+}
+
+.fc-table td.fc-event-coeff, .fc-table th.fc-event-coeff {
+    width:110px;
+}
+
+.fc-table td.fc-event-date, .fc-table th.fc-event-date {
+    width:65px;
+}
+
+.fc-table td.fc-event-time_remaning,.fc-table th.fc-event-time_remaning {
+    width:105px;
+}
+
+.fc-table td.fc-get-forecast-button, .fc-table th.fc-get-forecast-button {
+    width:50px;
+}
+
+.fc-table a:hover {
+	text-decoration:underline;
+}
+
+
+tr.fc-description {
+    border-top: 1px solid #4C4C4C;   /*#4C4C4C*/
+}
+
+tr.fc-description td {
+    font: normal 10pt/12pt Arial;
+}
+
+#fc-none {
+    text-align: center;
+}
+
+p.fc-buy-forecast {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}

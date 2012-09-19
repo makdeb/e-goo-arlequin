@@ -1,0 +1,133 @@
+#prices_content h4 {
+	color:#61380B;
+}
+
+#prices_wrap {
+	font: normal 13pt/16pt Suns-serif;
+}
+
+#prices_head {
+	width: 685px;
+	background: #bb3900;
+	text-align: left;
+	color: #ffffff;
+	font: normal 1.2em Times,Arial;
+	padding-left: 15px;
+ 	/*	margin-top: 15px; */
+}
+
+#prices_content {
+	padding-left: 5px;
+}
+
+#prices_content a:hover {
+	text-decoration: underline;
+}
+
+#prices {
+	padding: 5px 0;
+	margin: 0 auto;
+	width: 561px;
+	height: auto;
+ /*	overflow: auto; */
+	background: url(images/sport_text11.jpg) repeat;
+}
+
+
+.buy_wrap {
+	float: left;
+	width: 187px;
+	height: auto;
+	font: normal 12pt/17pt Suns-serif;
+}
+
+.buy_month {
+	padding-top: 10px;
+	clear: both;
+	width: 186px;
+	height: auto;
+	margin: 0 auto;
+	font: normal 12pt/17pt Suns-serif;
+}
+
+.buy {
+	position: relative;
+	top:0px;
+	left: 20px;
+	background: url(images/buy_new.png) no-repeat;;
+	width: 150px;
+	height: 39px;
+	cursor: pointer;
+	padding: 7px 0px 0px 7px;
+	text-align: center;
+	font: bold 13px Arial,serif;
+	color: orange; /*	#31B404; */
+}
+
+
+* html .buy {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/bonfire/themes/sports/images/buy_new.png');
+}
+
+.active {
+	background: url(images/buy_new_active.png) no-repeat;
+}
+
+.descript {
+	position: relative;
+	z-index: 100;
+	background: url(images/desctription4.png) no-repeat;
+	width: 183px;
+	height: 314px;
+	display: none;
+	margin: 0 auto;
+}
+
+.descript span {
+	position: relative;
+	display: block;
+	color: #636363;
+	background: url(images/vip_small_circle55.png) 95% 5% no-repeat;
+	padding-top: 18px;
+	padding-left: 13px;
+	padding-right: 15px;
+
+}
+
+.descript span p {
+	line-height: 1.5em;
+}
+
+.descript span .purchase {
+	text-align: center;
+	font: bolder 12pt/17pt Suns-serif;
+}
+
+.descript span .purchase a {
+	text-decoration: underline;
+}
+
+.descript a:hover {
+	color: green;
+}
+
+.cost {
+	position: relative;
+	top: -5px;
+	text-align: right;
+	width: 158px;
+	display: block;
+	color: #ffffff;
+	font:  bolder 11px Verdana,Arial;
+}
+
+.cost em {
+	font:  bolder 2.5em Verdana,Arial;
+}
+
+#prices_types li {
+	float: left;
+	list-style-type: none;
+}
+
