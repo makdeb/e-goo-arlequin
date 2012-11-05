@@ -25,7 +25,7 @@
 		
 		<div id='foo_right'>
 		<p>Обратная связь</p>
-		<form id='connect' name='connect'>
+		<form id='connect' name='connect' action="/mail" method="post">
 			<input id='email' type='email' name='email' placeholder="E-mail:" required pattern="^\s*\w+@\w+\.\w+\s*$"  /> <br>
 			<textarea name='text' type='text' placeholder="Message:" rows='9' required></textarea><br>
 			<input type="image" id='submit' src="<?php echo Template::theme_url()?>images/submit_button.png">
