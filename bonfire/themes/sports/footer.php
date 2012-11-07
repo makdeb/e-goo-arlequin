@@ -36,7 +36,7 @@
 
 
 		<div id='last'>
-			<p> Copyright &copy; 2012 	</p>
+			<p><small> EasyVictory.com.ua &copy; 2012 <a href="mailto:o-makdeb@yandex.ru">Uzh-Studio </a></small></p>
 			<div id='counter'>
 				<!--LiveInternet counter-->
 				<script type="text/javascript">
