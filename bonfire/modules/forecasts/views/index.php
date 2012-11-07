@@ -45,4 +45,19 @@
 						<span class="st_odnoklassniki" st_title='Актуальные прогнозы от команды Easy Victory'></span>
 						<span class="st_google" st_title='Актуальные прогнозы от команды Easy Victory>'></span>
 	</div>					
-							
+	
+	<div id="adware">
+		<!-- Ukrainian Banner Network 468x60 START -->
+				<center><script type='text/javascript'>
+				var _ubn=_ubn||{sid:Math.round((Math.random()*10000000)),data:[]};
+				(function(){var n=document.getElementsByTagName('script');
+				_ubn.data.push({user: 103117, format_id: 1, page: 1,
+				pid: Math.round((Math.random()*10000000)),placeholder: n[n.length-1]});
+				if(!_ubn.code)(function() {var script = document.createElement('script'); 
+				script.type = 'text/javascript'; _ubn.code= script.async = script.defer = true;
+				script.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'banner.kiev.ua/j/banner.js?'+_ubn.sid;
+				n[0].parentNode.insertBefore(script,n[0]);})();})();
+				</script><br>
+				<small><a href='https://www.bannerka.ua/' target=_top>Интернет реклама</a></small></center>
+				<!-- Ukrainian Banner Network 468x60 END -->
+	</div>								

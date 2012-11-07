@@ -547,6 +547,12 @@ textarea.invalid {
 	float: right;
 }
 
+#adware {
+	position: relative;
+	top: 10px;
+	clear: both;
+}
+
 /*
 .publish span {
 	position: relative;
