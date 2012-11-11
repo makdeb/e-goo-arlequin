@@ -8,6 +8,11 @@ class Forecasts_model extends BF_Model {
 	protected $date_format	= "datetime";
 	protected $set_created	= false;
 	protected $set_modified = false;
+	
+		public function find_all () {
+			$this->order_by('event_date','desc');
+			return parent::find_all();
+		}
         
         public function get_forecasts() {
             $sql='SELECT F.ID AS FORECAST_ID,

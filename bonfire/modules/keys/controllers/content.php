@@ -63,7 +63,13 @@ class content extends Admin_Controller {
 		}
                 $users=$this->user_model->find_all();
                 foreach ($users as $user) {
-                    $userdata[$user->id]=$user->first_name.' '.$user->last_name;
+                	if ((trim($user->last_name)!='')||(trim($user->first_name)!='')) {
+                		$userdata[$user->id]=$user->last_name.' '.$user->first_name.' ('.$user->username.')';
+                	}
+                	else {
+                		$userdata[$user->id]=$user->username;
+                	}                 	
+                    //$userdata[$user->id]=$user->first_name.' '.$user->last_name;
                 }                
                 Template::set('userdata',$userdata);                 
 	
@@ -107,7 +113,13 @@ class content extends Admin_Controller {
 		}
                 $users=$this->user_model->find_all();
                 foreach ($users as $user) {
-                    $userdata[$user->id]=$user->first_name.' '.$user->last_name;
+                	if ((trim($user->last_name)!='')||(trim($user->first_name)!='')) {
+                		$userdata[$user->id]=$user->last_name.' '.$user->first_name.' ('.$user->username.')';
+                	}
+                	else {
+                		$userdata[$user->id]=$user->username;
+                	}                	
+                    //$userdata[$user->id]=$user->first_name.' '.$user->last_name;
                 }                
                 Template::set('userdata',$userdata); 
 		
