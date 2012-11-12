@@ -12,7 +12,7 @@ class Keys_model extends BF_Model {
         public function find_all() {
             if (empty($this->selects))
             {
-                $this->select($this->table .'.*, first_name,last_name');
+                $this->select($this->table .'.*, first_name,last_name,username');
             }                        
             
             $this->db->join('users', 'users.id = keys.key_owner', 'left');

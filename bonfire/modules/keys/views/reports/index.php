@@ -35,9 +35,14 @@
 		
 		<?php foreach ($records as $record) : ?>
 			<tr>
-				
+				<?php if ((trim($record->last_name)!='')||(trim($record->first_name)!='')) {
+					$username=$record->last_name.' '.$record->first_name.' ('.$record->username.')';
+				}
+				else {
+					$username=$record->username;	
+				} ?>
 				<td><?php echo $record->key?></td>
-				<td><?php echo $record->last_name.' '.$record->first_name?></td>
+				<td><?php echo $username?></td>
                                 <td><?php echo $record->key_price!=null ? $record->key_price : 'не определено';?></td>
 				<td><?php echo $record->valid_untill!=null ? date('d.m.Y H:i:s',strtotime($record->valid_untill)) : 'не определено';?></td>                                
                                 <td><?php echo date('d.m.Y H:i:s',strtotime($record->ordered_on));?></td>
