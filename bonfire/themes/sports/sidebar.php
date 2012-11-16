@@ -17,6 +17,7 @@
 					<div></div>
 					<ul>
 						<li><a href="/forecasts">Прогнозы</a></li>
+						<li><a href="/forecasts/stats">Статистика</a></li>
 						<li><a href="/prices">Цены и оплата</a></li>
 						<li><a href="/news">Новости спорта</a></li>
 						<li><a href="/about/service">FAQ по сервису</a></li>
