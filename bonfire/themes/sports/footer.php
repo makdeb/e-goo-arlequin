@@ -15,11 +15,12 @@
 			<div id='two'>
 				<span style='height:45px; font-family: Verdana,Georgia,Arial; font-size: 20px; padding-top: 30px;'>Категории</span>
 				<span><a href="/forecasts">Последние прогнозы</a></span>
+				<span><a href="/forecasts/stats">Статистика прогнозов</a></span>
 				<span><a href="/prices">Цены и оплата</a></span>
 				<span><a href="/news">Новости спорта</a></span>
 
-				<span><a href="/about/service">FAQ по сервису</a></span>
-				<span><a href="/about/bets">FAQ по ставкам</a></span>
+				<span><a href="/about">О проекте</a></span>
+
 			</div>
 		</div>
 		
@@ -36,7 +37,7 @@
 
 
 		<div id='last'>
-			<p><small> EasyVictory.com.ua &copy; 2012 <a href="mailto:o-makdeb@yandex.ru">Uzh-Studio </a></small></p>
+			<p> <small> EasyVictory.com.ua &copy; 2012 <a href="mailto:o-makdeb@yandex.ru">Uzh-Studio </a></small></p>
 			<div id='counter'>
 				<!--LiveInternet counter-->
 				<script type="text/javascript">
@@ -54,6 +55,6 @@
 				</script>
 				<!--/LiveInternet-->	
 			<!--</div>	-->
-		</div>		
 		</div>
+	</div>
 	</div>	

@@ -110,6 +110,72 @@ class forecasts extends Front_Controller {
             $json['forecast_result']=$forecast_desc['event_result'];
             echo(json_encode($json));                
         }
-    }        
-
+    }    
+	
+	//--------------------------------------------------------------------	
+	/*
+		функция stats() используется для генерации стартовой страницы статистики.
+		Она определяет отображение статистики для текущего месяца текущего года.	
+	*/
+	public function stats() 
+    {	
+		$month = date('m');//текущий месяц
+		$year= date('Y');//текущий год
+		// массив соответствий названий месяцев и их порядковых номеров
+		$monthes = array(
+			'1' => 'Январь','2' => 'Февраль','3' => 'Март','4' => 'Апрель','5' => 'Май','6' => 'Июнь','7' => 'Июль','8' => 'Август','9' => 'Сентябрь','10' => 'Октябрь','11' => 'Ноябрь','12' => 'Декабрь'
+		);
+		
+        $forecasts=$this->forecasts_model->find_all_ready(0,$month,$year);//все прогнозы
+		$won_forecsts = count($this->forecasts_model->find_all_ready(1,$month,$year));// количество выиграных
+		$overall_forecasts = count($forecasts);//общее кол-во
+        //Assets::add_module_css('forecasts','forecasts.css');
+        //Assets::add_module_js('forecasts','forecasts.js');
+		Template::set('year', $year);
+		Template::set('month', $month);
+		Template::set('monthes', $monthes);
+		Template::set('overall', $overall_forecasts);
+		Template::set('won', $won_forecsts);
+        Template::set('records', $forecasts);
+        Template::render();
+    }
+	
+	/*
+		функция get_stats() используется для генерации любой порции статистики.
+		Она определяет отображение статистики для выбранного месяца текущего года.	
+	*/
+	
+	public function get_stats()
+	{	
+		$month=(int)$this->input->post('month');//прием месяца
+		$year=(int)$this->input->post('year');//прием года
+		
+		$data = array();
+		$data['records'] = $this->forecasts_model->find_all_ready(FALSE,$month,$year);//все прогнозы
+		$data['records'] = array_reverse($data['records']);
+		$data['all'] = count($data['records']);//общее кол-во
+		$data['won'] = count($this->forecasts_model->find_all_ready(1,$month,$year));//кол-во выигранных
+		
+		// генерируем результирующую json-строку всех прогнозов и количеств для javascript-а. 
+		$result = '{"success":true,"stats":[';
+		foreach ($data['records'] as $record) {
+		 	foreach ($record as $field => $value) {
+				if (($field=='is_vip')||($field=='event_name')||($field=='event_coeff')||($field=='event_result')||($field=='forecast_result')) {
+					$json[$field]= $value;
+				} elseif ($field=='event_date') {
+					$json[$field] = date('d.m',strtotime($value));
+				}
+			}
+		$result .= json_encode($json) .",";
+		$error = json_last_error();//если ошибка при кодировании
+			if ($error !== JSON_ERROR_NONE) {
+				$result = '{"success":false,"stats":[]}';
+				echo $result;
+				return;
+			}
+		}
+		$result=preg_replace('/\,$/', '', $result);//удаляем лишнюю последнюю запятую в строке
+		$result .= '],"all":"' .$data['all'] .'","won":"'.$data['won'] .'"}';
+		echo $result;
+	}
 }

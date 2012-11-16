@@ -65,4 +65,20 @@ class Forecasts_model extends BF_Model {
             }
             return $valid_key;
         }
+		/* 
+			функция find_all_ready() используется для выборки тех записей, 
+			дата которых соответствует параметрам $month и $year,
+			и у которых непременно проставлена успешность исхода(1 или 2). Записи, у которых успешность не определена (0), в выборку не попадают. Наконец, при заданном параметре $won, можно выбрать только те записи, у которых успешность прогноза =1. 
+		*/
+		public function find_all_ready($won=FALSE,$month=FALSE,$year=FALSE) {
+			if (!$won) {
+  				$sql='SELECT * FROM bf_forecasts WHERE (month(event_date) = ?)AND((forecast_result=1) OR (forecast_result=2))AND(year(event_date) = ?) ORDER BY id DESC';
+				$query=$this->db->query($sql,array($month,$year));
+			} else {
+				$sql='SELECT * FROM bf_forecasts WHERE (month(event_date) = ?)AND(forecast_result=?)AND(year(event_date)=?)';
+				$query=$this->db->query($sql,array($month,$won,$year)); 
+			}
+			return $query->result();
+		}
+		
 }
