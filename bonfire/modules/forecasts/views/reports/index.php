@@ -1,4 +1,10 @@
-<div class="box create rounded">
+<?php if (validation_errors()) : ?>
+<div class="notification error">
+	<?php echo validation_errors(); ?>
+</div>
+<?php endif; ?>
+
+<div class="box create rounded" style="width: 50%; float: left;">
 
 	<a class="button good" href="<?php echo site_url(SITE_AREA .'/reports/forecasts/create'); ?>">
 		<?php echo lang('forecasts_create_new_button'); ?>
@@ -6,9 +12,17 @@
 
 	<h3><?php echo lang('forecasts_create_new'); ?></h3>
 
-	<p><?php echo lang('forecasts_edit_text'); ?></p>
+</div>
+
+<?php echo form_open($this->uri->uri_string(), 'class="constrained ajax-form"'); ?>
+<div class="box create rounded mail">
+	<h3><?php echo lang('forecasts_send_mail'); ?></h3>
+	<input id="limit_newsletter" type="text" name="limit_newsletter" value="<?php echo set_value('limit_newsletter'); ?>"  />
+	<input id="newsletter" type="submit" name="newsletter" value="Разослать" />
+	<p><?php echo lang('forecasts_mail_text'); ?></p>
 
 </div>
+<?php echo form_close(); ?>
 
 <br />
 
@@ -39,8 +53,7 @@
 				<td><?php echo date("d.m.Y H:i:s",strtotime($record->event_date))?></td>
 				<td><?php echo $record->event_name?></td>
 				<td><?php echo $ecdata[$record->event_category]?></td>
-                   	<?php $event_description_stripped=strip_tags($record->event_description); ?>
-				<td><?php echo strlen($event_description_stripped)>40 ? substr($event_description_stripped,0,40).'...' : $event_description_stripped;?></td>
+                                <td><?php echo strlen($record->event_description)>40 ? substr($record->event_description,0,40).'...' : $record->event_description;?></td>
 				<td><?php echo $record->event_coeff?></td>
 				<td><?php echo $record->event_result?></td>
 				<td><?php 

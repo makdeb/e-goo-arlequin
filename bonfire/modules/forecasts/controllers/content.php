@@ -12,8 +12,11 @@ class content extends Admin_Controller {
         $this->load->model('forecasts_model', null, true);
         $this->load->model('../../eventscategories/models/eventscategories_model',null,true);
         $this->lang->load('forecasts','russian');
-
-
+		if (!class_exists('User_model'))
+		{
+			$this->load->model('users/User_model', 'user_model');
+		}
+		
         Assets::add_css('flick/jquery-ui-1.8.13.custom.css');
         Assets::add_css('jquery-ui-timepicker.css');
         Assets::add_css('xinha_fix.css');
@@ -35,6 +38,19 @@ class content extends Admin_Controller {
         foreach ($eventscategories as $eventcategory) {
             $ecdata[$eventcategory->id]=$eventcategory->event_category_name;
         }
+		// если производится отправка рассылки из формы отправки, вызываем send_mail() и передаем параметр последних сообщений limit_newsletter
+		if ($this->input->post('newsletter')) 
+		{
+			if ($this->send_mail())
+			{
+				Template::set_message(lang("forecasts_send_mail_success"), 'success');
+				Template::redirect(SITE_AREA .'/content/forecasts');
+			}
+			else
+			{
+				Template::set_message(lang('forecasts_send_mail_failure') . $this->forecasts_model->error, 'error');
+			}
+		}
 		
         Template::set('ecdata',$ecdata);                		
 
@@ -250,7 +266,113 @@ class content extends Admin_Controller {
     }
 
     //--------------------------------------------------------------------
+	 /*
+            Method: send_mail()
 
-
+            Обеспечивает отправку рассылки сообщений зарегистрированным пользователям
+			
+            Возвращает: False в случае неудачной отправки абсолютно всем получателям
+						True в других случаях.
+    */
+	
+	private function send_mail()
+	{
+		$this->form_validation->set_rules('limit_newsletter','количество прогнозов','integer|greater_than[0]|less_than[11]|required');	
+		if ($this->form_validation->run() === FALSE)
+        {
+            return FALSE;
+        }
+		
+		$sender = 'beautycorpulence@gmail.com';
+		
+		$forecasts = $this->forecasts_model->mail_forecasts($this->input->post('limit_newsletter'));// выборка последних прогнозов
+		// составляем тело сообщения
+		$text = '
+			<html>
+			<head>
+			  <title>Оповещение о свежих прогнозах на спорт | easyvictory.com.ua</title>
+			</head>
+			<body>
+			  <table id="wrapper" width="100%" cellpadding="0" cellspacing="0"><tr><td> 
+			  <table id="top-message" cellpadding="5" cellspacing="0" width="600" align="center"> 
+      		 	 <tr> 
+	                 <td width="210" valign="top" style="border-bottom: 1px solid grey"> 
+	                    <table width="200" cellpadding="10" cellspacing="0" bgcolor="ffffff"><tr><td width="200" height="5"></td></tr>
+						<tr><td> 
+	                        <img alt="Easy Victory" src="http://easyvictory.com.ua/bonfire/themes/sports/images/logo_mail.png" /> 
+	                    </td></tr>
+						</table> 
+	                 </td> 
+               		 <td align="left" style="font-size: smaller; color: #333; border-bottom: 1px solid grey"> 
+						<p><small>Не забудьте добавить наш email <a href="mailto:support@easyvictory.com.ua">support@easyvictory.com.ua</a> в адресную книгу, чтобы спам фильтры пропускали наши сообщения.<br/> Для того, чтобы первыми узнавать о прогнозах на сайте <a href="http://easyvictory.com.ua">easyvictory.com.ua</a>, добавляйте нас в закладки</small></p>
+	           		 </td> 
+      			  </tr> 
+				 <tr width="600" height="30">
+				 	<td colspan="3"></td>
+				 </tr> 
+    		   </table><!-- top message --> 
+			
+			<table id="main" width="600" align="center" cellpadding="10" cellspacing="0" bgcolor="ffffff">
+			    <thead bgcolor="bb3900" style="margin: 0px; border-bottom: 1px #ffffff solid; color: #ffffff; font: bolder 10pt/12pt Arial; text-align: left; white-space: nowrap;">
+				      <th>Матч</th><th>Коэффициент</th><th>Прогноз аналитиков</th>
+				</thead>
+				<tbody>' ;
+			
+		foreach ($forecasts as $row)
+		   {
+		      $name = $row->event_name;
+		      $coeff = $row->event_coeff;
+			  if ($row->is_vip == 0) {
+			  	$result = $row->event_result;
+			  } else {
+			  	$result = 'vip-прогноз';
+			  }
+			  $text .= '<tr>
+			      			<td>'.$name.'</td><td>'.$coeff.'</td><td>'.$result.'</td>
+			    		</tr>';
+		   }
+		
+		$text .='</tbody></table>
+				<table id="bottom-message" cellpadding="10" cellspacing="0" width="600" align="center" style="border-top: 1px solid grey; color: grey;"> 
+	        		<tr> 
+		            	<td align="left"> 
+			                <p><small>Вы получили это письмо, потому что подписаны на обновления</small></p> 
+			                <p><small>Если Вы не хотите получать такие сообщения, Вы всегда можете <a href="http://easyvictory.com.ua#connect">отказаться от рассылки</a>, написав нам в обратную связь</small></p> 
+		           		 </td> 
+	        		</tr> 
+    			</table><!-- bottom message --> 
+				</td></tr></table>
+				</body>
+				</html>';
+	
+		$headers = 'From:' .$sender ."\r\n" .
+				'Content-type: text/html; charset=utf-8';
+		$theme = 'новые прогнозы на спорт от easyvictory.com.ua';
+		
+		if (!isset($sender) or !isset($text)) {
+			return FALSE;
+		}
+		$users = $this->user_model->find_all(false);//получаем всех пользователей сайта, кроме удаленных
+		
+		$users_unsubscribe = array('4');//массив id пользователей отписанных от обновлений
+		
+		$i = 0;// счетчик успешных отправок сообщений
+		// отправка сообщений в цикле оО
+		foreach ($users as $user) {
+			$resipient = $user->email;
+			if ((($user->role_id == 1)||($user->role_id == 2)||($user->role_id == 4))&&(!in_array($user->id, $users_unsubscribe))) {
+				if (!mail($resipient, $theme, $text, $headers)){
+					continue;
+				} else $i++; // увеличиваем счетчик отправок в случае успеха
+			}	
+		}
+		if (!$i) {// если счетчик отправок равен нулю - ошибка
+			return FALSE;
+		} else {
+			// Log the activity
+                $this->activity_model->log_activity($this->auth->user_id(), lang('forecasts_act_send_mails').' ' . $i . ' recipients', 'forecasts');
+			return TRUE;
+		};
+	}
 
 }

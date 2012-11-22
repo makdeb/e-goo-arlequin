@@ -534,3 +534,20 @@ noscript {
 	padding: 10px;
 	margin: 0 auto;
 }
+/* Styles for newsletter*/
+.mail {
+	width: 30%;
+	float: right;
+	margin-right: 50px;
+}
+
+#newsletter {
+	float: right;
+}
+
+#limit_newsletter {
+	margin-left: 5px;
+	width: 15px;
+	height: 18px;
+	float: right;
+}

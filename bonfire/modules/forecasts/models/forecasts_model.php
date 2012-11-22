@@ -81,4 +81,15 @@ class Forecasts_model extends BF_Model {
 			return $query->result();
 		}
 		
+		/* 
+			функция mail_forecasts() используется для выборки ограниченного параметром $limit числа записей. 		 
+		*/
+		public function mail_forecasts($limit=FALSE) {
+            $this->db->select('event_name,event_coeff,event_result,is_vip');
+			$this->db->from($this->table);
+			$this->db->order_by("id", "desc");
+			$this->db->limit($limit);
+            $query=$this->db->get();            
+            return $query->result();
+        }
 }
