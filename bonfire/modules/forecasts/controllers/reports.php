@@ -283,7 +283,7 @@ class reports extends Admin_Controller {
             return FALSE;
         }
 		
-		$sender = 'beautycorpulence@gmail.com';
+		$sender = 'support@easyvictory.com.ua';
 		
 		$forecasts = $this->forecasts_model->mail_forecasts($this->input->post('limit_newsletter'));// выборка последних прогнозов
 		// составляем тело сообщения
