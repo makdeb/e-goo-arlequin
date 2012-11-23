@@ -25,3 +25,11 @@ $lang['forecasts_edit_heading']			= 'Редактировать прогноз';
 $lang['forecasts_act_create_record']			= 'Created record with ID';
 $lang['forecasts_act_edit_record']			= 'Updated record with ID';
 $lang['forecasts_act_delete_record']			= 'Deleted record with ID';
+$lang['forecasts_act_send_mails']			= 'Sent mails to';
+
+//Mail
+$lang['forecasts_mail_text']			= 'Зарегистрированные пользователи получают информацию об указанном количестве последних прогнозов';
+$lang['forecasts_send_mail']			= 'Рассылка оповещений';
+$lang['forecasts_mail_button']			= 'Разослать';
+$lang['forecasts_send_mail_success']			= 'Письма пользователям отправлены';
+$lang['forecasts_send_mail_failure']			= 'Ошибка при отправке рассылки';
