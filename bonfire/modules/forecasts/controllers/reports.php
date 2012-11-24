@@ -39,7 +39,7 @@ class reports extends Admin_Controller {
             $ecdata[$eventcategory->id]=$eventcategory->event_category_name;
         }
 		// если производится отправка рассылки из формы отправки, вызываем send_mail() и передаем параметр последних сообщений limit_newsletter
-		if ($this->input->post('newsletter')) 
+		if (($this->input->post('newsletter'))&&($this->auth->restrict('Mail.Reports.Send'))) 
 		{
 			if ($this->send_mail())
 			{
