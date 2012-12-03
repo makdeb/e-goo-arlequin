@@ -48,3 +48,17 @@
 					<?php endif;?>
 				
 				</div>
+								<!-- Start of Vibiray.com Code -->
+				<center><script type="text/javascript">
+				    setTimeout(function() {
+				        var el = document.createElement('script');
+				        el.type = 'text/javascript';
+				        el.src = '//www.vibiray.com/export/informer/212.js';
+				        el.async = true;
+				        document.getElementById('InformerVibiray-212').appendChild(el);
+				    }, 0);
+				</script>
+				<div id="InformerVibiray-212" align="center" style="width:250px;height:250px;margin:0 auto;">
+				<a href="http://www.vibiray.com">Интернет Торговый Центр "Выбирай.com"</a>
+				</div></center>
+				<!-- End of Vibiray.com Code -->
