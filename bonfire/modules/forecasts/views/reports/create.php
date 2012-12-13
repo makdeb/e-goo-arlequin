@@ -38,7 +38,7 @@ $id = isset($forecasts['id']) ? "/".$forecasts['id'] : '';
 
 <div>
         <?php echo form_label('Прогнозируемый результат', 'event_result'); ?>
-        <input id="event_result" type="text" name="event_result" maxlength="10" value="<?php echo set_value('event_result', isset($forecasts['event_result']) ? $forecasts['event_result'] : ''); ?>"  />
+        <input id="event_result" type="text" name="event_result" maxlength="75" value="<?php echo set_value('event_result', isset($forecasts['event_result']) ? $forecasts['event_result'] : ''); ?>"  />
 </div>
 
 <div>

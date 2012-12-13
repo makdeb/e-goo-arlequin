@@ -53,7 +53,7 @@
 				<td><?php echo date("d.m.Y H:i:s",strtotime($record->event_date))?></td>
 				<td><?php echo $record->event_name?></td>
 				<td><?php echo $ecdata[$record->event_category]?></td>
-                <?php $event_description_stripped=strip_tags($record->event_description); ?>
+                               <?php $event_description_stripped=strip_tags($record->event_description); ?>
 			    <td><?php echo strlen($event_description_stripped)>40 ? substr($event_description_stripped,0,40).'...' : $event_description_stripped;?></td>
 				<td><?php echo $record->event_coeff?></td>
 				<td><?php echo $record->event_result?></td>
