@@ -119,10 +119,7 @@ class forecasts extends Front_Controller {
 	*/
 	public function stats() 
     {	
-		//$month = date('m');//текущий месяц
-		
-		$month = '13'; // учет месяцев прошлого года
-		
+		$month = date('m');//текущий месяц
 		$year= date('Y');//текущий год
 		// массив соответствий названий месяцев и их порядковых номеров
 		$monthes = array(
@@ -152,8 +149,6 @@ class forecasts extends Front_Controller {
 	{	
 		$month=(int)$this->input->post('month');//прием месяца
 		$year=(int)$this->input->post('year');//прием года
-		
-		$year = $year -1; // учет прошлого года
 		
 		$data = array();
 		$data['records'] = $this->forecasts_model->find_all_ready(FALSE,$month,$year);//все прогнозы
